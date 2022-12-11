@@ -11,6 +11,10 @@
         :key="content.id"
         :product="content"
       />
+      <div >
+          {{ getContent}}
+
+      </div>
     </div>
 
   </section>
@@ -26,7 +30,7 @@ export default {
 
   data() {
     return {
-      productId: '5d3bb1f7-0106-4733-aede-6a3c1c7f21c8',
+      productId: "5d3bb1f7-0106-4733-aede-6a3c1c7f21c8",
       search: '',
       contentCard: '',
     }
@@ -46,21 +50,32 @@ export default {
           }
         }
     `,
-     getContent: gql`
-      query getContent($id: ID!) {
-        getContent(id: $id) {
-           id
-           title
+      getContent: gql`
+        query getContent {
+          getContent(id:"5d3bb1f7-0106-4733-aede-6a3c1c7f21c8") {
+              id
+              title
+            }
+          }
+        `,
 
-        }
-      }
-    `,
-    variables() {
-      return {
-        id: this.productId
-      }
-    }
-  },
+        // getContentId: {
+//         query: gql`
+//         query getContent($id: ID!) {
+//           getContent(id: $id) {
+//               id
+//               title
+//             }
+//           }
+//         `,
+//         variables() {
+//           return {
+//             id: this.productId
+//           }
+//         }
+//       }
+    },
+
 
   components: {
     ProductCard,
@@ -74,6 +89,14 @@ export default {
       })
     },
   },
+
+  mounted() {
+    alert(this.getContent.id)
+  }
+
+
+
+
 }
 </script>
 
