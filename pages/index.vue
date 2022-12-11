@@ -26,7 +26,9 @@ export default {
 
   data() {
     return {
-      contentId: '5d3bb1f7-0106-4733-aede-6a3c1c7f21c8',
+      productId: '5d3bb1f7-0106-4733-aede-6a3c1c7f21c8',
+      search: '',
+      contentCard: '',
     }
   },
 
@@ -45,7 +47,7 @@ export default {
         }
     `,
      getContent: gql`
-      query getContent($id: ID) {
+      query getContent($id: ID!) {
         getContent(id: $id) {
            id
            title
@@ -55,7 +57,7 @@ export default {
     `,
     variables() {
       return {
-        id: this.contentId
+        id: this.productId
       }
     }
   },
@@ -64,12 +66,6 @@ export default {
     ProductCard,
     NavBar,
     Modal
-  },
-  data() {
-    return {
-      search: '',
-      contentCard: '',
-    }
   },
   computed: {
     filteredCards: function() {

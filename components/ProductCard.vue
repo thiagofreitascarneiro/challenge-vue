@@ -16,39 +16,21 @@
 
     </div>
     <div class="footer-card">
-      <button @click="getProduct($event)">Clique aqui</button>
+      <button>Clique aqui</button>
     </div>
   </div>
 
 </template>
 
 <script>
-import gql from 'graphql-tag'
+
 
 export default {
   name: 'ProductCard',
   props: ['product'],
 
-  apollo: {
-    getContent: gql`
-      query getContents {
-        getContent($id: ID) {
-           id
-           title
-           embeddable
-           allow_download
-        }
-      }
-    `
-  },
-
   methods: {
-    getProduct(event) {
-      if(event) {
-         console.log(event)
-        alert('olá', event.target.value)
-      }
-    }
+
   }
 }
 </script>
