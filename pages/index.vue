@@ -50,31 +50,23 @@ export default {
           }
         }
     `,
-      getContent: gql`
-        query getContent {
-          getContent(id:"5d3bb1f7-0106-4733-aede-6a3c1c7f21c8") {
-              id
-              title
-            }
-          }
-        `,
 
-        // getContentId: {
-//         query: gql`
-//         query getContent($id: ID!) {
-//           getContent(id: $id) {
-//               id
-//               title
-//             }
-//           }
-//         `,
-//         variables() {
-//           return {
-//             id: this.productId
-//           }
-//         }
-//       }
-    },
+    getContent: {
+      query: gql`
+      query getProductId($id: String!) {
+        getContent(id: $id) {
+            id
+            title
+          }
+        }
+      `,
+      variables() {
+        return {
+          id: this.productId
+        }
+      }
+    }
+  },
 
 
   components: {
