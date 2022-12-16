@@ -16,7 +16,7 @@
 
     </div>
     <div class="footer-card">
-      <button>Clique aqui</button>
+      <slot></slot>
     </div>
   </div>
 

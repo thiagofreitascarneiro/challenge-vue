@@ -10,9 +10,11 @@
         v-for="content in filteredCards"
         :key="content.id"
         :product="content"
-      />
+      >
+      <button :id="content.id" @click="selectId($event)">Clique aqui</button>
+      </ProductCard>
       <div >
-          {{ getContent}}
+          <!-- {{ getContent}} -->
 
       </div>
     </div>
@@ -33,6 +35,7 @@ export default {
       productId: "5d3bb1f7-0106-4733-aede-6a3c1c7f21c8",
       search: '',
       contentCard: '',
+      targetId: ''
     }
   },
 
@@ -51,7 +54,7 @@ export default {
         }
     `,
 
-    getContent: {
+     getContent: {
       query: gql`
       query getProductId($id: String!) {
         getContent(id: $id) {
@@ -75,15 +78,21 @@ export default {
     Modal
   },
   computed: {
-    filteredCards: function() {
+    filteredCards() {
       return this.contents.filter((content) => {
         return content.title.match(this.search)
       })
     },
   },
+  methods: {
+    selectId(event) {
+       this.productId= event.currentTarget.id;
+          console.log(this.productId);
+    }
+  },
 
   mounted() {
-    alert(this.getContent.id)
+    // alert(this.getContent.id)
   }
 
 
