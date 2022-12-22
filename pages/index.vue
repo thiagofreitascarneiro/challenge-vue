@@ -11,7 +11,13 @@
         :key="content.id"
         :product="content"
       >
-      <button :id="content.id" @click="selectId($event)">Clique aqui</button>
+         <nuxt-link to="/contentCard">
+          <button :id="content.id" @click="selectId($event)">
+            Clique aqui
+          </button>
+        </nuxt-link>
+
+
       </ProductCard>
       <div >
           <!-- {{ getContent}} -->
@@ -26,13 +32,14 @@
 import gql from 'graphql-tag'
 import ProductCard from '../components/ProductCard.vue'
 import NavBar from '../components/NavBar.vue'
-import Modal from '../components/Modal.vue'
+
+
 
 export default {
 
   data() {
     return {
-      productId: "5d3bb1f7-0106-4733-aede-6a3c1c7f21c8",
+      productIdExample: "5d3bb1f7-0106-4733-aede-6a3c1c7f21c8",
       search: '',
       contentCard: '',
       targetId: ''
@@ -56,16 +63,16 @@ export default {
 
      getContent: {
       query: gql`
-      query getProductId($id: String!) {
-        getContent(id: $id) {
-            id
-            title
+        query getProductId($id: String!) {
+          getContent(id: $id) {
+              id
+              title
+            }
           }
-        }
-      `,
+        `,
       variables() {
         return {
-          id: this.productId
+          id: this.productIdExample
         }
       }
     }
@@ -75,7 +82,6 @@ export default {
   components: {
     ProductCard,
     NavBar,
-    Modal
   },
   computed: {
     filteredCards() {
@@ -83,12 +89,14 @@ export default {
         return content.title.match(this.search)
       })
     },
+
   },
   methods: {
     selectId(event) {
-       this.productId= event.currentTarget.id;
-          console.log(this.productId);
-    }
+       this.productIdExample = event.currentTarget.id;
+          console.log(this.productIdExample);
+       this.$store.commit('SET_PRODUCT_ID', event.currentTarget.id)
+    },
   },
 
   mounted() {

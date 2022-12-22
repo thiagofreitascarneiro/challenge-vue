@@ -100,20 +100,6 @@ export default {
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
-      button {
-        font-family: $font;
-        font-weight: 600;
-        font-size: 15px;
-        cursor: pointer;
-        margin-top: 10px;
-        color: $white;
-        /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15); */
-        border-radius: 20px;
-        width: 150px;
-        height: 40px;
-        background: $colorSecundary;
-        border: none;
-      }
 
     }
 
