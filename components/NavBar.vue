@@ -5,7 +5,9 @@
       <label for="check" class="checkbtn">
         <font-awesome-icon style="margin-top: 20px; margin-right: 20px;" icon="fa-solid fa-bars" />
       </label>
-      <label class="logo">Minha Logo</label>
+      <label class="logo">
+        <img src="../assets/images/logo.png">
+      </label>
       <ul>
         <li><a class="active" href="#">Início</a></li>
         <li><a href="#">Sobre</a></li>
@@ -65,11 +67,12 @@ nav {
 }
 
 .logo {
-  color: $white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+  padding: 30px;
+  line-height: 110px;
+  img {
+
+
+  }
 }
 
 .checkbtn {
@@ -139,5 +142,14 @@ nav {
       left: 0;
     }
 
+}
+
+@media (max-width: 350px) {
+  .logo {
+    img  {
+      width: 20vh;
+    }
+
+  }
 }
 </style>

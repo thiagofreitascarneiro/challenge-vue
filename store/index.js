@@ -1,22 +1,18 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
 import gql from 'graphql-tag';
+import graphqlClient from '../utils/graphql';
 
-import graphqlClient from '../../utils/graphql';
 
-Vue.use(Vuex);
-
-export const state = {
-  productId: '',
-};
+export const state = () => ({
+  cardId: 'aaaaaaaaaa'
+})
 
 export const mutations = {
   SET_PRODUCT_ID(state, id) {
-    state.productId = id
-    console.log(state.productId)
+    console.log(state.cardId)
+    state.cardId = id
+    console.log(state.cardId)
   }
-
-};
+}
 
 export const actions = {
   async fetchContentCard() {
@@ -31,15 +27,11 @@ export const actions = {
         `,
       variables() {
         return {
-          id: this.productId
+          id: this.cardId
         }
       }
     });
   },
-};
+}
 
-export default new Vuex.Store({
-  mutations,
-  actions,
-  state,
-});
+

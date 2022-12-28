@@ -43,11 +43,21 @@ export default {
   .card {
     background: #FFFFFF;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 318px;
     height: 330px;
     border-radius: 16px;
     margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &:hover {
+      transition:.5s;
+      transform: translateY(-10px);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+
+    }
 
 
     .header-card {
@@ -60,12 +70,9 @@ export default {
         justify-content: center;
         box-shadow: 25px 24px 64px rgba(0, 0, 0, 0.06);
 
-
         .icon {
           color:  #5434af;
           margin: 28px auto;
-
-
         }
       }
 

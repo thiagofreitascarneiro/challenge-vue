@@ -11,7 +11,7 @@
         :key="content.id"
         :product="content"
       >
-         <nuxt-link to="/contentCard">
+        <nuxt-link to="/contentCard">
           <button :id="content.id" @click="selectId($event)">
             Clique aqui
           </button>
@@ -20,7 +20,7 @@
 
       </ProductCard>
       <div >
-          <!-- {{ getContent}} -->
+
 
       </div>
     </div>
@@ -32,7 +32,6 @@
 import gql from 'graphql-tag'
 import ProductCard from '../components/ProductCard.vue'
 import NavBar from '../components/NavBar.vue'
-
 
 
 export default {
@@ -78,33 +77,28 @@ export default {
     }
   },
 
-
   components: {
     ProductCard,
     NavBar,
   },
+
   computed: {
     filteredCards() {
       return this.contents.filter((content) => {
         return content.title.match(this.search)
       })
     },
-
   },
+
   methods: {
     selectId(event) {
-       this.productIdExample = event.currentTarget.id;
-          console.log(this.productIdExample);
-       this.$store.commit('SET_PRODUCT_ID', event.currentTarget.id)
+       const id = event.currentTarget.id;
+       this.$store.commit('SET_PRODUCT_ID', id)
     },
   },
-
   mounted() {
     // alert(this.getContent.id)
   }
-
-
-
 
 }
 </script>
@@ -115,14 +109,21 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+   h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: $colorSecundary;
+   }
 
   .search-input {
-    width: 400px !important;
+    width: 700px !important;
+    height: 30px;
     margin: 100px auto;
     padding: 10px;
     border: 1px solid rgb(30 60 90 / 10%);
     border-radius: $borderRadius;
-    width: 500px;
+
     &:focus-visible {
       outline-color: $mainColor
     }
@@ -130,7 +131,6 @@ export default {
 
   .contents {
     display: flex;
-    margin-top: 20px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
@@ -158,7 +158,9 @@ export default {
 
 @media(max-width: 450px) {
   .container {
-
+    h1 {
+      font-size: 25px;
+    }
 
   .search-input {
 
