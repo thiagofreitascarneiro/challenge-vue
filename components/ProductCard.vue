@@ -87,6 +87,11 @@ export default {
       h3 {
         font-family: $font;
         margin-top: 15px;
+        overflow: hidden; // Removendo barra de rolagem
+        text-overflow: ellipsis; // Adicionando "..." ao final
+        display: -webkit-box;
+        -webkit-line-clamp: 2; // Quantidade de linhas
+        -webkit-box-orient: vertical;
       }
 
       p {
@@ -111,8 +116,6 @@ export default {
     }
 
   }
-
-
 
 
 

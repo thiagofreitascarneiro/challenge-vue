@@ -9,10 +9,14 @@
         <img src="../assets/images/logo.png">
       </label>
       <ul>
-        <li><a class="active" href="#">Início</a></li>
+        <li>
+          <nuxt-link class="active" to="/">
+            Início
+          </nuxt-link>
+
+        </li>
         <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
+
       </ul>
 	</nav>
   </div>
@@ -47,8 +51,9 @@ nav {
       margin: 0 5px;
 
       a {
-        color: $white;
-        font-size: 17px;
+        color: $colorSecundary;
+        font-size: 19px;
+        font-weight: 700;
         padding: 7px 13px;
         border-radius: 3px;
         text-transform: uppercase;
@@ -60,6 +65,7 @@ nav {
         &:hover {
           background: #1d075f;
           transition: .5s;
+          color: $white;
         }
       }
     }

@@ -1,8 +1,8 @@
 <template>
-  <section class="container">
+  <div class="container">
     <NavBar/>
 
-    <h1>Minha Logo - com a minha logo seu conhecimento vai mais longe.</h1>
+    <h1>Minha Logo - Com a Studytech seu conhecimento vai mais longe.</h1>
 
     <input class="search-input" type="text" v-model="search" placeholder="pesquisar..."/>
     <div class="contents">
@@ -11,43 +11,39 @@
         :key="content.id"
         :product="content"
       >
-        <nuxt-link to="/contentCard">
+        <nuxt-link :to="`/content/${content.id}`">
           <button :id="content.id" @click="selectId($event)">
             Clique aqui
           </button>
         </nuxt-link>
-
-
       </ProductCard>
-      <div >
 
-
-      </div>
     </div>
-
-  </section>
+    <FooterBar/>
+  </div>
 </template>
 
 <script>
 import gql from 'graphql-tag'
 import ProductCard from '../components/ProductCard.vue'
 import NavBar from '../components/NavBar.vue'
-
+import FooterBar from '../components/FooterBar.vue'
 
 export default {
 
   data() {
     return {
-      productIdExample: "5d3bb1f7-0106-4733-aede-6a3c1c7f21c8",
       search: '',
       contentCard: '',
-      targetId: ''
+      targetId: '',
+      contents: null
     }
   },
 
-  apollo: {
-    contents: gql`
-      query getAllProducts {
+   async created() {
+    const {data}= await this.$apollo.query({
+       query: gql`
+       query getAllProducts {
           contents {
              embeddable
              allow_download
@@ -58,33 +54,42 @@ export default {
              type
           }
         }
-    `,
-
-     getContent: {
-      query: gql`
-        query getProductId($id: String!) {
-          getContent(id: $id) {
-              id
-              title
-            }
-          }
         `,
-      variables() {
-        return {
-          id: this.productIdExample
-        }
-      }
-    }
-  },
+    })
+
+
+
+     this.contents = data.contents
+     console.log(this.contents)
+     console.log(data)
+   },
+
+  // apollo: {
+  //   contents: gql`
+  //     query getAllProducts {
+  //         contents {
+  //            embeddable
+  //            allow_download
+  //            id
+  //            title
+  //            description
+  //            url
+  //            type
+  //         }
+  //       }
+  //   `,
+  // },
 
   components: {
     ProductCard,
     NavBar,
+    FooterBar,
   },
 
   computed: {
     filteredCards() {
-      return this.contents.filter((content) => {
+      console.log(this.contents)
+      return this.contents?.filter((content) => {
         return content.title.match(this.search)
       })
     },
@@ -94,11 +99,10 @@ export default {
     selectId(event) {
        const id = event.currentTarget.id;
        this.$store.commit('SET_PRODUCT_ID', id)
+
     },
   },
-  mounted() {
-    // alert(this.getContent.id)
-  }
+
 
 }
 </script>
