@@ -1,18 +1,19 @@
 <template>
-<div>
+<div class="container">
   <NavBar/>
-  <h1>Conteudo</h1>
-
   <h2 v-if="loading">Loading...</h2>
 
-  <h3 v-else>{{content.url}}</h3>
+  <div class="content-product" v-else>
+    <h1>{{content.title}}</h1>
+    <!-- <h2>{{content.description}}</h2> -->
+  </div>
+
 
 </div>
 
 </template>
 
 <script>
-// import { mapState } from 'vuex';
 import gql from 'graphql-tag';
 import NavBar from '../../components/NavBar'
 
@@ -30,60 +31,48 @@ export default {
   },
 
   async created() {
-    console.log(this)
-
     this.loading = true
-
     const {data} = await this.$apollo.query({
-              query: gql`
-        query getProductId($id: String!) {
-          getContent(id: $id) {
-              id
-              title
-              description
-              allow_download
-              embeddable
-              url
-            }
-          }
-        `,
-          variables:{
-            id: this.$route.params.id
-            }
+    query: gql`
+    query getProductId($id: String!) {
+      getContent(id: $id) {
+        id
+        title
+        description
+        allow_download
+        embeddable
+        url
+        }
+      }
+    `,
+    variables:{
+      id: this.$route.params.id
+      }
     })
-console.log(data)
-              this.content = data.getContent
-this.loading = false
+    this.content = data.getContent
+    this.loading = false
   },
-  // mounted() {
-  //   console.log(this.cardId)
-  // },
-  // computed: {
-  //   ...mapState(['cardId']),
-  // },
-
-  // apollo: {
-  //   getContent: {
-  //     query: gql`
-  //       query getProductId($id: String!) {
-  //         getContent(id: $id) {
-  //             id
-  //             title
-  //             description
-  //             allow_download
-  //             embeddable
-  //             url
-  //           }
-  //         }
-  //       `,
-  //     variables:{
-  //         id: this.cardId
-  //       }
-  //   }
-  // }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../../assets/css/main";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .content-product {
+    h1 {
+      margin: 15px auto;
+      text-align: center;
+      color: $colorSecundary;
+    }
+    h2 {
+    margin: 15px auto;
+    text-align: center;
+    }
+  }
+
+}
 
 </style>

@@ -10,15 +10,20 @@
         <font-awesome-icon v-if="product.type == 'text'" class=" fa-7x" icon="fa-solid fa-book-open"/>
       </div>
     </div>
+
     <div class="body-card">
       <h3>{{product.title}}</h3>
-
-
     </div>
+
     <div class="footer-card">
+      <p>Download</p>
       <slot></slot>
     </div>
+
+
   </div>
+
+
 
 </template>
 
@@ -112,6 +117,17 @@ export default {
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
+
+      p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: right;
+        color: #007AE9;
+
+      }
 
     }
 

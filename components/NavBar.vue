@@ -13,12 +13,10 @@
           <nuxt-link class="active" to="/">
             Início
           </nuxt-link>
-
         </li>
         <li><a href="#">Sobre</a></li>
-
       </ul>
-	</nav>
+	  </nav>
   </div>
 </template>
 

@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Metropolis:400,700'
+        href: "https://fonts.googleapis.com/css2?family=DM Serif Display&display=swap",
       }
     ]
   },
@@ -27,6 +27,7 @@ export default {
 
     // SCSS file in the project
     '@/assets/css/main.scss',
+
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,7 +41,8 @@ export default {
   buildModules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/apollo',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/google-fonts'
   ],
 
   fontawesome: {

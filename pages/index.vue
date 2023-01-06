@@ -4,19 +4,20 @@
 
     <h1>Minha Logo - Com a Studytech seu conhecimento vai mais longe.</h1>
 
-    <input class="search-input" type="text" v-model="search" placeholder="pesquisar..."/>
+    <input class="search-input" type="text" v-model="search"
+    placeholder="pesquisar..."/>
     <div class="contents">
-      <ProductCard
+      <Product
         v-for="content in filteredCards"
         :key="content.id"
         :product="content"
       >
         <nuxt-link :to="`/content/${content.id}`">
-          <button :id="content.id" @click="selectId($event)">
-            Clique aqui
+          <button class="button" :id="content.id" @click="selectId($event)">
+            Clique Aqui
           </button>
         </nuxt-link>
-      </ProductCard>
+      </Product>
 
     </div>
     <FooterBar/>
@@ -28,6 +29,7 @@ import gql from 'graphql-tag'
 import ProductCard from '../components/ProductCard.vue'
 import NavBar from '../components/NavBar.vue'
 import FooterBar from '../components/FooterBar.vue'
+import Product from '../components/Product.vue'
 
 export default {
 
@@ -56,39 +58,18 @@ export default {
         }
         `,
     })
-
-
-
      this.contents = data.contents
-     console.log(this.contents)
-     console.log(data)
    },
-
-  // apollo: {
-  //   contents: gql`
-  //     query getAllProducts {
-  //         contents {
-  //            embeddable
-  //            allow_download
-  //            id
-  //            title
-  //            description
-  //            url
-  //            type
-  //         }
-  //       }
-  //   `,
-  // },
 
   components: {
     ProductCard,
     NavBar,
     FooterBar,
+    Product,
   },
 
   computed: {
     filteredCards() {
-      console.log(this.contents)
       return this.contents?.filter((content) => {
         return content.title.match(this.search)
       })
@@ -113,6 +94,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+  background: #EFF0F3;
    h1 {
     margin-top: 50px;
     text-align: center;
@@ -156,6 +138,12 @@ export default {
 
   .contents {
     flex-direction: column;
+    .button {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+    }
   }
 }
 }
@@ -176,6 +164,32 @@ export default {
 
   .contents {
     flex-direction: column;
+  }
+}
+}
+
+@media(max-width: 370px) {
+  .container {
+    h1 {
+      font-size: 25px;
+    }
+
+  .search-input {
+
+
+    &:focus-visible {
+
+    }
+  }
+
+  .contents {
+    flex-direction: column;
+
+    .button {
+      width: 100px;
+      height: 25px;
+      margin-top: 5px;
+    }
   }
 }
 }
