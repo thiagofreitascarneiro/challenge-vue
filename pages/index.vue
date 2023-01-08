@@ -2,7 +2,7 @@
   <div class="container">
     <NavBar/>
 
-    <h1>Minha Logo - Com a Studytech seu conhecimento vai mais longe.</h1>
+    <!-- <h1>Minha Logo - Com a Studytech seu conhecimento vai mais longe.</h1> -->
 
     <input class="search-input" type="text" v-model="search"
     placeholder="pesquisar..."/>
@@ -100,6 +100,7 @@ export default {
     text-align: center;
     font-size: 35px;
     color: $colorSecundary;
+    font-family: "DM Serif Display";
    }
 
   .search-input {

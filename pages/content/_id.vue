@@ -4,10 +4,17 @@
   <h2 v-if="loading">Loading...</h2>
 
   <div class="content-product" v-else>
-    <h1>{{content.title}}</h1>
-    <!-- <h2>{{content.description}}</h2> -->
+    <div>
+      <h1>{{content.title}}</h1>
+      <p>{{content.description}}</p>
+    </div>
+    <picture class="image-product">
+      <img src="../../assets/images/select.svg">
+    </picture>
   </div>
-
+<div>
+  <video></video>
+</div>
 
 </div>
 
@@ -61,15 +68,52 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+  background: #EFF0F3;
+
+
   .content-product {
-    h1 {
-      margin: 15px auto;
-      text-align: center;
-      color: $colorSecundary;
+    width: 835px;
+    height: 284px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 20px auto;
+
+    .image-product {
+      position: relative;
+      img {
+         right: 32px;
+         top: 32px;
+         position: absolute;
+      }
     }
-    h2 {
-    margin: 15px auto;
-    text-align: center;
+
+    h1 {
+      margin-top: 32px;
+      margin-left: 32px;
+      margin-bottom: 8px;
+      width: 564px;
+      height: 80px;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      color: #111111;
+
+    }
+    p {
+      width: 764px;
+      height: 32px;
+      margin-left: 32px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+
     }
   }
 
