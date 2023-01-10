@@ -2,20 +2,38 @@
 <div class="container">
   <NavBar/>
   <h2 v-if="loading">Loading...</h2>
-
-  <div class="content-product" v-else>
-    <div>
-      <h1>{{content.title}}</h1>
-      <p>{{content.description}}</p>
+  <div class='content' v-else>
+    <div class="content-product" >
+      <div>
+        <h1>{{content.title}}</h1>
+        <p>{{content.description}}</p>
+         <div v-if="content.type == 'link'">
+          <a :href='content.url' target="_blank">
+            <button class='button'>visualizar o conteúdo</button>
+          </a>
+      </div>
+      </div>
+      <picture class="image-product">
+        <img src="../../assets/images/select.svg">
+      </picture>
     </div>
-    <picture class="image-product">
-      <img src="../../assets/images/select.svg">
-    </picture>
-  </div>
-<div>
-  <video></video>
-</div>
 
+    <div v-if="content.type == 'video'">
+      <iframe style="margin: 20px auto" width="620" height="315"
+      :src="content.url">
+      </iframe>
+    </div>
+    <div class='image' v-if="content.type == 'image'">
+     <img width='900px' style="margin: 20px auto" :src="content.url">
+    </div>
+
+    <div v-if="content.type == 'document'">
+      <iframe style="margin: 20px auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; " width="820" height="515" :src="content.url">
+
+      </iframe>
+    </div>
+  </div>
+<FooterBar/>
 </div>
 
 </template>
@@ -23,17 +41,20 @@
 <script>
 import gql from 'graphql-tag';
 import NavBar from '../../components/NavBar'
+import FooterBar from '../../components/FooterBar.vue'
 
 
 export default {
   name: 'contentCard',
   components: {
-    NavBar
+    NavBar,
+    FooterBar
   },
   data() {
     return {
       content: null,
       loading: false,
+
     }
   },
 
@@ -49,6 +70,7 @@ export default {
         allow_download
         embeddable
         url
+        type
         }
       }
     `,
@@ -58,6 +80,7 @@ export default {
     })
     this.content = data.getContent
     this.loading = false
+    console.log(this.content)
   },
 }
 </script>
@@ -70,16 +93,25 @@ export default {
   flex-direction: column;
   background: #EFF0F3;
 
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-  .content-product {
+    .content-product {
     width: 835px;
-    height: 284px;
+    height: 100%;
     display: flex;
     align-items: flex-start;
     padding: 0px;
     background: #FFFFFF;
     border-radius: 24px;
     margin: 20px auto;
+
+    .button {
+      margin-bottom: 30px;
+      margin-left: 320px;
+    }
 
     .image-product {
       position: relative;
@@ -90,12 +122,20 @@ export default {
       }
     }
 
+    .image {
+      display: flex;
+      margin: 0 auto;
+      iframe {
+        margin: 0 auto;
+      }
+    }
+
     h1 {
       margin-top: 32px;
       margin-left: 32px;
       margin-bottom: 8px;
       width: 564px;
-      height: 80px;
+      height: 100%;
       font-family: "DM Serif Display";
       font-style: normal;
       font-weight: 400;
@@ -106,17 +146,19 @@ export default {
     }
     p {
       width: 764px;
-      height: 32px;
+      height: 100%;
       margin-left: 32px;
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 32px;
+      margin-bottom: 32px;
 
     }
   }
 
+  }
 }
 
 </style>

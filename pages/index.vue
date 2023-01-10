@@ -112,7 +112,7 @@ export default {
     border-radius: $borderRadius;
 
     &:focus-visible {
-      outline-color: $mainColor
+      outline-color: $colorSecundary
     }
   }
 
