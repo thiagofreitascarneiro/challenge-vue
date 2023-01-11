@@ -119,6 +119,7 @@ nav {
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 1;
   }
 
   nav ul li {
