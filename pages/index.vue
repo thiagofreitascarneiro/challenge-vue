@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <NavBar/>
-
-    <!-- <h1>Minha Logo - Com a Studytech seu conhecimento vai mais longe.</h1> -->
-
+    <div v-if="loading">
+      <page-loading/>
+    </div>
     <input class="search-input" type="text" v-model="search"
     placeholder="pesquisar..."/>
     <div class="contents">
@@ -13,7 +13,7 @@
         :product="content"
       >
         <nuxt-link :to="`/content/${content.id}`">
-          <button class="button" :id="content.id" @click="selectId($event)">
+          <button class="button-purple" :id="content.id" @click="selectId($event)">
             Clique Aqui
           </button>
         </nuxt-link>
@@ -30,6 +30,7 @@ import ProductCard from '../components/ProductCard.vue'
 import NavBar from '../components/NavBar.vue'
 import FooterBar from '../components/FooterBar.vue'
 import Product from '../components/Product.vue'
+import PageLoading from '../components/PageLoading.vue'
 
 export default {
 
@@ -38,11 +39,13 @@ export default {
       search: '',
       contentCard: '',
       targetId: '',
-      contents: null
+      contents: null,
+      loading: false,
     }
   },
 
    async created() {
+    this.loading = true
     const {data}= await this.$apollo.query({
        query: gql`
        query getAllProducts {
@@ -59,6 +62,7 @@ export default {
         `,
     })
      this.contents = data.contents
+     this.loading = false
    },
 
   components: {
@@ -66,6 +70,7 @@ export default {
     NavBar,
     FooterBar,
     Product,
+    PageLoading
   },
 
   computed: {
@@ -139,7 +144,7 @@ export default {
 
   .contents {
     flex-direction: column;
-    .button {
+    .button-purple  {
       text-align: center;
       align-items: center;
       justify-content: center;
@@ -188,7 +193,7 @@ export default {
   .contents {
     flex-direction: column;
 
-    .button {
+    .button-purple  {
       width: 100px;
       height: 25px;
       margin-top: 5px;

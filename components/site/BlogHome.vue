@@ -195,6 +195,7 @@ export default {
 
   img {
     width: 65vw;
+    margin-top: 0px;
     }
   }
 }

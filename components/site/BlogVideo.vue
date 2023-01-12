@@ -158,7 +158,7 @@ export default {
             order: 2;
             margin-top: 0px;
             img {
-                width: 85vw;
+                width: 65vw;
 
             }
         }

@@ -1,7 +1,9 @@
 <template>
 <div class="container">
   <NavBar/>
-  <h2 v-if="loading">Loading...</h2>
+  <div v-if="loading">
+    <page-loading/>
+  </div>
   <div class='content' v-else>
     <div class="content-product" >
       <div class='title-and-description'>
@@ -15,7 +17,7 @@
 
     <div v-if="content.type == 'link'">
       <a :href='content.url' target="_blank">
-        <button class='button'>visualizar o conteúdo</button>
+        <button class='button-purple '>visualizar o conteúdo</button>
       </a>
     </div>
 
@@ -56,13 +58,14 @@
 import gql from 'graphql-tag';
 import NavBar from '../../components/NavBar'
 import FooterBar from '../../components/FooterBar.vue'
-
+import PageLoading from '../../components/PageLoading.vue'
 
 export default {
   name: 'contentCard',
   components: {
     NavBar,
-    FooterBar
+    FooterBar,
+    PageLoading
   },
   data() {
     return {
@@ -94,7 +97,7 @@ export default {
     })
     this.content = data.getContent
     this.loading = false
-    console.log(this.content)
+
   },
 }
 </script>
@@ -122,7 +125,7 @@ export default {
     border-radius: 24px;
     margin: 20px auto;
 
-    .button {
+    .button-purple  {
       margin-bottom: 30px;
       margin-left: 320px;
     }
@@ -198,7 +201,7 @@ export default {
 
     .content-product {
       width: 635px;
-    .button {
+    .button-purple  {
 
     }
     .title-and-description {
@@ -241,7 +244,7 @@ export default {
 
     .content-product {
       width: 435px;
-    .button {
+    .button-purple  {
 
     }
     .title-and-description {
@@ -283,7 +286,7 @@ export default {
 
     .content-product {
       width: 300px;
-    .button {
+    .button-purple {
 
     }
     .title-and-description {
