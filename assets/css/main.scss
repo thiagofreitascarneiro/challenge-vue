@@ -6,7 +6,7 @@
   margin: 0px;
 }
 
-.button {
+.button-purple {
   font-family: $font;
   font-weight: 600;
   font-size: 15px;
@@ -17,12 +17,48 @@
   border-radius: 20px;
   width: 150px;
   height: 40px;
-  background: $colorSecundary;
+  background: $colorSecondary;
   border: none;
   justify-content: center;
 
   a {
     color: $white;
     text-decoration: none;
+  }
+}
+
+.button {
+  width: 133px;
+  height: 52px;
+  background: $colorSecondary;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Montserrat';
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+
+  @media(max-width: 470px) {
+      margin-top: 40px;
+  }
+}
+
+.transparent-button {
+  width: 162px;
+  height: 52px;
+  border: 1px solid $colorSecondary;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: 'Montserrat';
+  color: $colorSecondary;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media(max-width: 768px) {
+      margin-top: 30px;
   }
 }

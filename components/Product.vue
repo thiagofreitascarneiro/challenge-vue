@@ -97,7 +97,7 @@ export default {
           font-size: 28px;
           line-height: 25px;
           text-align: right;
-          color: $colorSecundary;
+          color: $colorSecondary;
           justify-content: flex-end;
         }
       }
@@ -202,7 +202,7 @@ export default {
             font-size: 18px;
             line-height: 15px;
             text-align: right;
-            color: $colorSecundary;
+            color: $colorSecondary;
             justify-content: flex-end;
           }
         }
@@ -311,7 +311,7 @@ export default {
             font-size: 18px;
             line-height: 15px;
             text-align: right;
-            color: $colorSecundary;
+            color: $colorSecondary;
             justify-content: flex-end;
           }
         }

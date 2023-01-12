@@ -99,7 +99,7 @@ export default {
     margin-top: 50px;
     text-align: center;
     font-size: 35px;
-    color: $colorSecundary;
+    color: $colorSecondary;
     font-family: "DM Serif Display";
    }
 
@@ -112,7 +112,7 @@ export default {
     border-radius: $borderRadius;
 
     &:focus-visible {
-      outline-color: $colorSecundary
+      outline-color: $colorSecondary;
     }
   }
 
@@ -129,7 +129,7 @@ export default {
 
 
   .search-input {
-    width: 200px !important;
+    width: 400px !important;
     padding: 15px;
 
     &:focus-visible {
@@ -157,6 +157,7 @@ export default {
 
   .search-input {
 
+    width: 300px !important;
 
     &:focus-visible {
 
@@ -177,6 +178,7 @@ export default {
 
   .search-input {
 
+    width: 250px !important;
 
     &:focus-visible {
 

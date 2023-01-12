@@ -3,7 +3,7 @@
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-        <font-awesome-icon style="margin-top: 20px; margin-right: 20px;" icon="fa-solid fa-bars" />
+        <font-awesome-icon style="margin-top: 20px; margin-right: 20px; color:#5434af" icon="fa-solid fa-bars" />
       </label>
       <label class="logo">
         <img src="../assets/images/logo.png">
@@ -14,7 +14,11 @@
             Início
           </nuxt-link>
         </li>
-        <li><a href="#">Sobre</a></li>
+        <li>
+          <nuxt-link class="active" to="/site">
+            Site
+          </nuxt-link>
+        </li>
       </ul>
 	  </nav>
   </div>
@@ -49,7 +53,7 @@ nav {
       margin: 0 5px;
 
       a {
-        color: $colorSecundary;
+        color: $colorSecondary;
         font-size: 19px;
         font-weight: 700;
         padding: 7px 13px;
@@ -113,8 +117,8 @@ nav {
   ul {
     position:fixed;
     width: 100%;
-    height: 55vh;
-    background: #1d075f;
+    height: 30vh;
+    background: $colorSecondary;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -133,13 +137,14 @@ nav {
 
   a {
     font-size: 20px;
+    color: #ffffff !important;
     &:active{
           background: none;
-          color: #5434af;
+          color: #ffffff;
         }
         &:hover {
           background: none;
-          color: #5434af;
+          color: #ffffff;
         }
     }
 

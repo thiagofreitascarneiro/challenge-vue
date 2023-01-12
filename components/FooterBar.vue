@@ -67,7 +67,7 @@ footer {
   margin-top: 120px;
   width: 100%;
   min-height: 150px;
-  background: $colorSecundary;
+  background: $colorSecondary;
   display: flex;
 
   .boxs {
@@ -135,7 +135,7 @@ footer {
       line-height: 40px;
       background: $mainColor;
       margin: 10px;
-      color: $colorSecundary;
+      color: $colorSecondary;
       border-radius: 5px;
       cursor: pointer;
       transition: background .3s linear;
