@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <NavBar/>
-  <div v-if="loading">
+  <div class="loading" v-if="loading">
     <page-loading/>
   </div>
   <div class='content' v-else>
@@ -109,6 +109,12 @@ export default {
   display: flex;
   flex-direction: column;
   background: #EFF0F3;
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
 
   .content {
     display: flex;

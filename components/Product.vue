@@ -35,9 +35,9 @@
       </div>
       <div class="footer-card">
         <div class= "download" v-if="product.allow_download == true">
-          <p>Download</p>
+          <p>Visualizar Imagem</p>
 
-          <font-awesome-icon style="color:#5434af" class=" fa-3x" icon="fa-solid fa-cloud-arrow-down" />
+
         </div>
 
         <slot></slot>

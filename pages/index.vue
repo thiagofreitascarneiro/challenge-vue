@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <NavBar/>
-    <div v-if="loading">
-      <page-loading/>
-    </div>
     <input class="search-input" type="text" v-model="search"
     placeholder="pesquisar..."/>
     <div class="contents">
+       <div v-if="loading">
+        <page-loading/>
+      </div>
       <Product
         v-for="content in filteredCards"
         :key="content.id"
@@ -26,7 +26,6 @@
 
 <script>
 import gql from 'graphql-tag'
-import ProductCard from '../components/ProductCard.vue'
 import NavBar from '../components/NavBar.vue'
 import FooterBar from '../components/FooterBar.vue'
 import Product from '../components/Product.vue'
@@ -66,7 +65,6 @@ export default {
    },
 
   components: {
-    ProductCard,
     NavBar,
     FooterBar,
     Product,
