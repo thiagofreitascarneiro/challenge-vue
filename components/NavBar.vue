@@ -61,11 +61,11 @@ nav {
         text-transform: uppercase;
         text-decoration: none;
         &:active{
-          background: #1d075f;
+          background: $colorSecondary;
           transition: .5s;
         }
         &:hover {
-          background: #1d075f;
+          background: $colorSecondary;
           transition: .5s;
           color: $white;
         }

@@ -36,8 +36,6 @@
       <div class="footer-card">
         <div class= "download" v-if="product.allow_download == true">
           <p>Visualizar Imagem</p>
-
-
         </div>
 
         <slot></slot>

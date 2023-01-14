@@ -13,7 +13,7 @@
         :product="content"
       >
         <nuxt-link :to="`/content/${content.id}`">
-          <button class="button-purple" :id="content.id" @click="selectId($event)">
+          <button class="button-purple">
             Clique Aqui
           </button>
         </nuxt-link>
@@ -78,15 +78,6 @@ export default {
       })
     },
   },
-
-  methods: {
-    selectId(event) {
-       const id = event.currentTarget.id;
-       this.$store.commit('SET_PRODUCT_ID', id)
-
-    },
-  },
-
 
 }
 </script>
