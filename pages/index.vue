@@ -18,7 +18,6 @@
           </button>
         </nuxt-link>
       </Content>
-
     </div>
     <FooterBar/>
   </div>

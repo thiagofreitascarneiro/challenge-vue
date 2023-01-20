@@ -43,7 +43,7 @@
       </iframe>
     </div>
 
-     <div class="mobile" v-if="content.type == 'document'">
+    <div class="mobile" v-if="content.type == 'document'">
       <iframe style="margin: 20px auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; "
       width="320" height="515" :src="content.url">
       </iframe>
