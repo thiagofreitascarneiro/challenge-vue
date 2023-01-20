@@ -3,7 +3,7 @@ import Product from '@/components/Product.vue'
 
 describe('Product', () => {
   it('is a Vue instance', () => {
-    const wrapper = shallowMount(Product, {
+    const wrapper = mount(Product, {
       propsData: {
         title: 'some title',
         description: 'some description'

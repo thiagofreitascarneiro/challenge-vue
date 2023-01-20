@@ -4,11 +4,11 @@
     <input class="search-input" type="text" v-model="search"
     placeholder="pesquisar..."/>
     <div class="contents">
-       <div v-if="loading">
-        <page-loading/>
+      <div v-if="loading">
+        <PageLoading/>
       </div>
       <Product
-        v-for="content in filteredCards"
+        v-for=" content in filteredCards"
         :key="content.id"
         :product="content"
       >
