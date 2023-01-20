@@ -1,35 +1,35 @@
 <template>
   <div>
     <NavBar/>
-    <BlogHome/>
-    <BlogPackage/>
-    <BlogVideo/>
-    <BlogPrice/>
-    <BlogClient/>
-    <BlogEducation/>
+    <Home/>
+    <Package/>
+    <Video/>
+    <Price/>
+    <Client/>
+    <Education/>
     <FooterBar/>
   </div>
 </template>
 
 <script>
-import BlogHome from '@/components/site/BlogHome';
-import BlogPackage from '@/components/site/BlogPackage';
-import BlogVideo from '@/components/site/BlogVideo';
-import BlogPrice from '@/components/site/BlogPrice';
-import BlogClient from '@/components/site/BlogClient';
-import BlogEducation from '@/components/site/BlogEducation';
-import FooterBar from '@/components/FooterBar';
-import NavBar from '@/components/NavBar'
+import Home from '@/components/site/Home.vue';
+import Package from '@/components/site/Package.vue';
+import Video from '@/components/site/Video.vue';
+import Price from '@/components/site/Price.vue';
+import Client from '@/components/site/Client.vue';
+import Education from '@/components/site/Education.vue';
+import FooterBar from '@/components/FooterBar.vue';
+import NavBar from '@/components/NavBar.vue'
 
 export default {
   name: 'site',
    components: {
-    BlogHome,
-    BlogPackage,
-    BlogVideo,
-    BlogPrice,
-    BlogClient,
-    BlogEducation,
+    Home,
+    Package,
+    Video,
+    Price,
+    Client,
+    Education,
     FooterBar,
     NavBar,
   }
