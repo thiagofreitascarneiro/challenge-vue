@@ -1,9 +1,9 @@
 import { mount, shallowMount } from '@vue/test-utils'
-import Product from '@/components/Product.vue'
+import Content from '~/components/Content.vue'
 
-describe('Product', () => {
+describe('Content', () => {
   it('is a Vue instance', () => {
-    const wrapper = mount(Product, {
+    const wrapper = mount(Content, {
       propsData: {
         title: 'some title',
         description: 'some description'

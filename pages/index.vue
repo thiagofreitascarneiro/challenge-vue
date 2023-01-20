@@ -7,8 +7,8 @@
       <div v-if="loading">
         <PageLoading/>
       </div>
-      <Product
-        v-for=" content in filteredCards"
+      <Content
+        v-for=" content in filteredContent"
         :key="content.id"
         :product="content"
       >
@@ -17,7 +17,7 @@
             Clique Aqui
           </button>
         </nuxt-link>
-      </Product>
+      </Content>
 
     </div>
     <FooterBar/>
@@ -28,7 +28,7 @@
 import gql from 'graphql-tag'
 import NavBar from '../components/NavBar.vue'
 import FooterBar from '../components/FooterBar.vue'
-import Product from '../components/Product.vue'
+import Content from '../components/Content.vue'
 import PageLoading from '../components/PageLoading.vue'
 
 export default {
@@ -47,7 +47,7 @@ export default {
     this.loading = true
     const {data}= await this.$apollo.query({
        query: gql`
-       query getAllProducts {
+       query getAllContents {
           contents {
              embeddable
              allow_download
@@ -67,12 +67,12 @@ export default {
   components: {
     NavBar,
     FooterBar,
-    Product,
+    Content,
     PageLoading
   },
 
   computed: {
-    filteredCards() {
+    filteredContent() {
       return this.contents?.filter((content) => {
         return content.title.match(this.search)
       })
