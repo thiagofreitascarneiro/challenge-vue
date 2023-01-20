@@ -17,37 +17,22 @@
 
     <div v-if="content.type == 'link'">
       <a :href='content.url' target="_blank">
-        <button class='button-purple '>visualizar o conteúdo</button>
+        <button class='button-purple'>visualizar o conteúdo</button>
       </a>
     </div>
 
-    <div class="mobile-hide" v-if="content.type == 'video'">
-      <iframe style="margin: 20px auto" width="620" height="315"
-      :src="content.url">
-      </iframe>
-    </div>
-
-    <div class="mobile" v-if="content.type == 'video'">
-      <iframe style="margin: 20px auto" width="320" height="315"
-      :src="content.url">
-      </iframe>
+    <div class="video" v-if="content.type == 'video'">
+      <iframe :src="content.url"></iframe>
     </div>
 
     <div class='image' v-if="content.type == 'image'">
-     <img width='900px' style="margin: 20px auto" :src="content.url">
+     <img :src="content.url">
     </div>
 
-    <div class="mobile-hide" v-if="content.type == 'document'">
-      <iframe style="margin: 20px auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; "
-      width="920" height="615" :src="content.url">
-      </iframe>
+    <div class="slides" v-if="content.type == 'document'">
+      <iframe :src="content.url"></iframe>
     </div>
 
-    <div class="mobile" v-if="content.type == 'document'">
-      <iframe style="margin: 20px auto; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; "
-      width="320" height="515" :src="content.url">
-      </iframe>
-    </div>
   </div>
 <FooterBar/>
 </div>
@@ -121,6 +106,32 @@ export default {
     align-items: center;
     flex-direction: column;
 
+    .video {
+      iframe {
+        margin: 20px auto;
+        width:620;
+        height:315px;
+      }
+    }
+
+    .slides {
+      iframe {
+       margin: 20px auto;
+       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       width:920px;
+       height:615px;
+      }
+    }
+
+    .image {
+      display: flex;
+      margin: 0 auto;
+      img {
+        margin: 0 auto;
+        width: 900px;
+      }
+    }
+
     .content-product {
     width: 835px;
     height: 100%;
@@ -175,15 +186,6 @@ export default {
       }
     }
 
-    .image {
-      display: flex;
-      margin: 0 auto;
-      iframe {
-        margin: 0 auto;
-      }
-    }
-
-
   }
 
   }
@@ -201,7 +203,14 @@ export default {
 
     .video {
       iframe {
-        width: 650px;
+        width: 450px;
+      }
+    }
+
+    .slides {
+      iframe {
+        width: 600px;
+        height: 400px;
       }
     }
 
@@ -248,6 +257,19 @@ export default {
       }
     }
 
+    .video {
+      iframe {
+        width: 350px;
+      }
+    }
+
+    .slides {
+      iframe {
+        width: 420px;
+        height: 400px;
+      }
+    }
+
     .content-product {
       width: 435px;
     .button-purple  {
@@ -290,6 +312,21 @@ export default {
       }
     }
 
+    .video {
+      iframe {
+        width: 270px;
+        height: 200px;
+      }
+    }
+
+    .slides {
+      iframe {
+        width: 250px;
+        height: 400px;
+      }
+    }
+
+
     .content-product {
       width: 300px;
     .button-purple {
@@ -322,19 +359,5 @@ export default {
   }
   }
 }
-
-  @media only screen and (max-width: 768px) {
-    .mobile-hide{ display: none !important; }
-    }
-  @media only screen and (max-width: 400px) {
-  .mobile{ display: inline !important; }
-  }
-  @media only screen and (min-width: 500px) {
-  .desktop-hide{ display: none !important; }
-  }
-
-  @media only screen and (min-width: 768px) {
-    .mobile{ display: none !important; }
-    }
 
 </style>
