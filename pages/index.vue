@@ -26,10 +26,10 @@
 
 <script>
 import gql from 'graphql-tag'
-import NavBar from '@/components/NavBar.vue'
-import FooterBar from '@/components/FooterBar.vue'
-import Content from '@/components/Content.vue'
-import PageLoading from '@/components/PageLoading.vue'
+import NavBar from '@/components/NavBar'
+import FooterBar from '@/components/FooterBar'
+import Content from '@/components/Content'
+import PageLoading from '@/components/PageLoading'
 
 export default {
 

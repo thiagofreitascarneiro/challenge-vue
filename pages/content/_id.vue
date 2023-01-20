@@ -57,8 +57,8 @@
 <script>
 import gql from 'graphql-tag';
 import NavBar from '@/components/NavBar'
-import FooterBar from '@/components/FooterBar.vue'
-import PageLoading from '@/components/PageLoading.vue'
+import FooterBar from '@/components/FooterBar'
+import PageLoading from '@/components/PageLoading'
 
 export default {
   name: 'contentCard',
