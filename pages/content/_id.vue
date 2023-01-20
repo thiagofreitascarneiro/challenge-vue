@@ -2,7 +2,7 @@
 <div class="container">
   <NavBar/>
   <div class="loading" v-if="loading">
-    <page-loading/>
+    <PageLoading/>
   </div>
   <div class='content' v-else>
     <div class="content-product" >
