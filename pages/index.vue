@@ -33,6 +33,15 @@ import PageLoading from '@/components/PageLoading'
 
 export default {
 
+  name: 'index',
+
+  components: {
+    NavBar,
+    FooterBar,
+    Content,
+    PageLoading
+  },
+
   data() {
     return {
       search: '',
@@ -63,13 +72,6 @@ export default {
      this.contents = data.contents
      this.loading = false
    },
-
-  components: {
-    NavBar,
-    FooterBar,
-    Content,
-    PageLoading
-  },
 
   computed: {
     filteredContent() {
@@ -126,9 +128,6 @@ export default {
     width: 400px !important;
     padding: 15px;
 
-    &:focus-visible {
-
-    }
   }
 
   .contents {
@@ -153,9 +152,6 @@ export default {
 
     width: 300px !important;
 
-    &:focus-visible {
-
-    }
   }
 
   .contents {
@@ -174,9 +170,6 @@ export default {
 
     width: 250px !important;
 
-    &:focus-visible {
-
-    }
   }
 
   .contents {
