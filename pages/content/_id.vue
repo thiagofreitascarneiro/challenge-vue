@@ -1,6 +1,5 @@
 <template>
 <div class="container">
-  <NavBar/>
   <div class="loading" v-if="loading">
     <PageLoading/>
   </div>
@@ -34,22 +33,17 @@
     </div>
 
   </div>
-<FooterBar/>
 </div>
 
 </template>
 
 <script>
 import gql from 'graphql-tag';
-import NavBar from '@/components/NavBar'
-import FooterBar from '@/components/FooterBar'
 import PageLoading from '@/components/PageLoading'
 
 export default {
   name: 'contentCard',
   components: {
-    NavBar,
-    FooterBar,
     PageLoading
   },
   data() {

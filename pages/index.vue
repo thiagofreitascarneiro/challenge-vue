@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <NavBar/>
     <input class="search-input" type="text" v-model="search"
     placeholder="pesquisar..."/>
     <div class="contents">
@@ -19,14 +18,12 @@
         </nuxt-link>
       </Content>
     </div>
-    <FooterBar/>
+
   </div>
 </template>
 
 <script>
 import gql from 'graphql-tag'
-import NavBar from '@/components/NavBar'
-import FooterBar from '@/components/FooterBar'
 import Content from '@/components/Content'
 import PageLoading from '@/components/PageLoading'
 
@@ -35,8 +32,6 @@ export default {
   name: 'index',
 
   components: {
-    NavBar,
-    FooterBar,
     Content,
     PageLoading
   },
