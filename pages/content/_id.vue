@@ -14,19 +14,27 @@
       </picture>
     </div>
 
-    <div v-if="content.type == 'link'">
+    <LinkContent
+      :linkProps="content"
+      v-if="content.type == 'link'" :url="content.url"
+      :key="content.id"
+    />
+
+    <!-- <div v-if="content.type == 'link'">
       <a :href='content.url' target="_blank">
-        <button class='button-purple'>visualizar o conteúdo</button>
+        <button class='button'>visualizar o conteúdo</button>
       </a>
-    </div>
+    </div> -->
 
     <div class="video" v-if="content.type == 'video'">
       <iframe :src="content.url"></iframe>
     </div>
 
-    <div class='image' v-if="content.type == 'image'">
-     <img :src="content.url">
-    </div>
+    <ImageContent
+      :imgContent="content"
+      v-if="content.type == 'image'" :url="content.url"
+      :key="content.id"
+    />
 
     <div class="slides" v-if="content.type == 'document'">
       <iframe :src="content.url"></iframe>
@@ -39,12 +47,14 @@
 
 <script>
 import gql from 'graphql-tag';
-import PageLoading from '@/components/PageLoading'
+import PageLoading from '@/components/PageLoading';
 
 export default {
   name: 'contentCard',
   components: {
-    PageLoading
+    PageLoading,
+    LinkContent: () => import('@/components/LinkContent'),
+    ImageContent: () => import('@/components/ImageContent'),
   },
   data() {
     return {
@@ -138,11 +148,6 @@ export default {
     border-radius: 24px;
     margin: 20px auto;
 
-    .button-purple  {
-      margin-bottom: 30px;
-      margin-left: 320px;
-    }
-
     .title-and-description {
        h1 {
       margin-top: 32px;
@@ -191,12 +196,6 @@ export default {
 .container {
   .content {
 
-    .image {
-      img {
-      width: 65vh;
-    }
-    }
-
     .video {
       iframe {
         width: 450px;
@@ -212,9 +211,7 @@ export default {
 
     .content-product {
       width: 635px;
-    .button-purple  {
 
-    }
     .title-and-description {
        h1 {
             width: 464px;
@@ -232,13 +229,7 @@ export default {
          position: absolute;
       }
     }
-    .image {
-      display: flex;
-      margin: 0 auto;
-      iframe {
-        margin: 0 auto;
-      }
-    }
+
     }
   }
   }
@@ -247,11 +238,6 @@ export default {
 @media(max-width: 650px) {
 .container {
   .content {
-    .image {
-        img {
-        width: 49vh;
-      }
-    }
 
     .video {
       iframe {
@@ -268,9 +254,7 @@ export default {
 
     .content-product {
       width: 435px;
-    .button-purple  {
 
-    }
     .title-and-description {
        h1 {
             width: 364px;
@@ -287,13 +271,6 @@ export default {
         top: 21px;
       }
     }
-    .image {
-      display: flex;
-      margin: 0 auto;
-      iframe {
-        margin: 0 auto;
-      }
-    }
   }
   }
   }
@@ -302,12 +279,6 @@ export default {
 @media(max-width: 450px) {
 .container {
   .content {
-    .image {
-        img {
-        width: 35vh;
-      }
-    }
-
     .video {
       iframe {
         width: 270px;
@@ -322,33 +293,22 @@ export default {
       }
     }
 
-
     .content-product {
       width: 300px;
-    .button-purple {
 
-    }
     .title-and-description {
-       h1 {
-            width: 264px;
-    }
-    p {
-     width: 264px;
-
-    }
+      h1 {
+          width: 264px;
+        }
+      p {
+        width: 264px;
+      }
     }
     .image-product {
       position: relative;
       img {
         right: 14px;
         top: 5px;
-      }
-    }
-    .image {
-      display: flex;
-      margin: 0 auto;
-      iframe {
-        margin: 0 auto;
       }
     }
   }

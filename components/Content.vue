@@ -48,7 +48,12 @@
 <script>
 export default {
   name: 'Product',
-  props: ['product'],
+  props: {
+  product: {
+    type: Object,
+    required: true
+  }
+}
 }
 </script>
 
@@ -64,14 +69,6 @@ export default {
     border-radius: 16px;
     display: flex;
     margin-top: 50px;
-
-    /* .is-static {
-      background: #D2EBF7;
-    }
-
-    .is-media {
-      background: linear-gradient(135deg, #F395BA 0%, #FED182 100%)
-    } */
 
     .card-header {
       width: 350px;
