@@ -88,6 +88,8 @@ export default {
   display: flex;
   flex-direction: column;
   background: #EFF0F3;
+  margin-top: 5px;
+  margin-bottom: 120px;
 
   .loading {
     display: flex;

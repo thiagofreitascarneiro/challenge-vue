@@ -50,6 +50,7 @@ export default {
     height: 490px;
     width: 100%;
     margin-top: 183px;
+    background: $white;
     .package {
         display: flex;
         justify-content: space-around;

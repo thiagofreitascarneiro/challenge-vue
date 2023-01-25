@@ -13,7 +13,7 @@
     <div style='background: linear-gradient(135deg, #F395BA 0%, #FED182 100%)'
     v-if="product.type == 'image' || product.type == 'video'"
     class="card-header">
-      <img  src="../assets/images/Business.png">
+      <img  src="../assets/images/Group.png">
     </div>
 
     <div class="card-body">
@@ -64,6 +64,15 @@ export default {
     border-radius: 16px;
     display: flex;
     margin-top: 50px;
+
+    /* .is-static {
+      background: #D2EBF7;
+    }
+
+    .is-media {
+      background: linear-gradient(135deg, #F395BA 0%, #FED182 100%)
+    } */
+
     .card-header {
       width: 350px;
       height: 400px;

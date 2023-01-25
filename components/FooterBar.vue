@@ -64,7 +64,7 @@ export default {
 @import "../assets/css/main";
 
 footer {
-  margin-top: 120px;
+  margin-top: 0px;
   width: 100%;
   min-height: 150px;
   background: $colorSecondary;

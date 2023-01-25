@@ -32,6 +32,7 @@ export default {
 .container {
     width:100%;
     height: 669px;
+    background: $white;
     .video {
         display: flex;
         justify-content: space-around;

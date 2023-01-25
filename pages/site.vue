@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-site">
     <Home/>
     <Package/>
     <Video/>
@@ -33,6 +33,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/css/main.scss"
+@import "../assets/css/main.scss";
+
+.container-site {
+  background: $white;
+}
+
 
 </style>

@@ -85,6 +85,8 @@ export default {
   display: flex;
   flex-direction: column;
   background: #EFF0F3;
+  margin-top: 10px;
+  margin-bottom: 120px;
    h1 {
     margin-top: 50px;
     text-align: center;
