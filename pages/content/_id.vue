@@ -56,6 +56,7 @@ export default {
     LinkContent: () => import('@/components/LinkContent'),
     ImageContent: () => import('@/components/ImageContent'),
     VideoContent: () => import('@/components/VideoContent'),
+    SlideContent: () => import('@/components/SlideContent')
   },
   data() {
     return {
