@@ -12,11 +12,11 @@
 export default {
   name: 'LinkContent',
   props: {
-  linkProps: {
-    type: Object,
-    required: true
+    linkProps: {
+      type: Object,
+      required: true
+    }
   }
-}
 }
 </script>
 

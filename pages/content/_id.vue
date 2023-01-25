@@ -6,9 +6,11 @@
   <div class='content' v-else>
     <div class="content-product" >
       <div class='title-and-description'>
+
         <h1>{{content.title}}</h1>
         <p>{{content.description}}</p>
       </div>
+
       <picture class="image-product">
         <img src="../../assets/images/select.svg">
       </picture>
@@ -16,29 +18,27 @@
 
     <LinkContent
       :linkProps="content"
-      v-if="content.type == 'link'" :url="content.url"
+      v-if="content.type == 'link'"
       :key="content.id"
     />
 
-    <!-- <div v-if="content.type == 'link'">
-      <a :href='content.url' target="_blank">
-        <button class='button'>visualizar o conteúdo</button>
-      </a>
-    </div> -->
-
-    <div class="video" v-if="content.type == 'video'">
-      <iframe :src="content.url"></iframe>
-    </div>
+    <VideoContent
+      :videoProps="content"
+      v-if="content.type == 'video'"
+      :key="content.id"
+    />
 
     <ImageContent
-      :imgContent="content"
-      v-if="content.type == 'image'" :url="content.url"
+      :imgProps="content"
+      v-if="content.type == 'image'"
       :key="content.id"
     />
 
-    <div class="slides" v-if="content.type == 'document'">
-      <iframe :src="content.url"></iframe>
-    </div>
+    <SlideContent
+      :slideProps="content"
+      v-if="content.type == 'document'"
+      :key="content.id"
+    />
 
   </div>
 </div>
@@ -55,6 +55,7 @@ export default {
     PageLoading,
     LinkContent: () => import('@/components/LinkContent'),
     ImageContent: () => import('@/components/ImageContent'),
+    VideoContent: () => import('@/components/VideoContent'),
   },
   data() {
     return {
@@ -111,23 +112,6 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    .video {
-      iframe {
-        margin: 20px auto;
-        width:620;
-        height:315px;
-      }
-    }
-
-    .slides {
-      iframe {
-       margin: 20px auto;
-       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       width:920px;
-       height:615px;
-      }
-    }
 
     .image {
       display: flex;
@@ -195,20 +179,6 @@ export default {
 @media(max-width: 768px) {
 .container {
   .content {
-
-    .video {
-      iframe {
-        width: 450px;
-      }
-    }
-
-    .slides {
-      iframe {
-        width: 600px;
-        height: 400px;
-      }
-    }
-
     .content-product {
       width: 635px;
 
@@ -238,20 +208,6 @@ export default {
 @media(max-width: 650px) {
 .container {
   .content {
-
-    .video {
-      iframe {
-        width: 350px;
-      }
-    }
-
-    .slides {
-      iframe {
-        width: 420px;
-        height: 400px;
-      }
-    }
-
     .content-product {
       width: 435px;
 
@@ -279,20 +235,6 @@ export default {
 @media(max-width: 450px) {
 .container {
   .content {
-    .video {
-      iframe {
-        width: 270px;
-        height: 200px;
-      }
-    }
-
-    .slides {
-      iframe {
-        width: 250px;
-        height: 400px;
-      }
-    }
-
     .content-product {
       width: 300px;
 

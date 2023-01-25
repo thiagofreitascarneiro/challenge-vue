@@ -1,6 +1,6 @@
 <template>
   <div class='image'>
-    <img :src="imgContent.url">
+    <img :src="imgProps.url">
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
 name: 'ImageContent',
  props: {
-  imgContent: {
+  imgProps: {
     type: Object,
     required: true
   }
