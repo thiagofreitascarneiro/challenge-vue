@@ -43,17 +43,17 @@
 </template>
 
 <script>
-import gql from 'graphql-tag';
-import PageLoading from '@/components/PageLoading';
+import gql from "graphql-tag";
+import PageLoading from "@/components/PageLoading";
 
 export default {
-  name: 'contentCard',
+  name: "contentCard",
   components: {
     PageLoading,
-    LinkContent: () => import('@/components/LinkContent'),
-    ImageContent: () => import('@/components/ImageContent'),
-    VideoContent: () => import('@/components/VideoContent'),
-    SlideContent: () => import('@/components/SlideContent'),
+    LinkContent: () => import("@/components/LinkContent"),
+    ImageContent: () => import("@/components/ImageContent"),
+    VideoContent: () => import("@/components/VideoContent"),
+    SlideContent: () => import("@/components/SlideContent"),
   },
   data() {
     return {
@@ -89,7 +89,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/css/main';
+@import "../../assets/css/main";
 
 .container {
   display: flex;
@@ -135,7 +135,7 @@ export default {
           margin-bottom: 8px;
           width: 564px;
           height: 100%;
-          font-family: 'DM Serif Display';
+          font-family: $font;
           font-style: normal;
           font-weight: 400;
           font-size: 32px;
@@ -146,7 +146,7 @@ export default {
           width: 764px;
           height: 100%;
           margin-left: 32px;
-          font-family: 'Open Sans';
+          font-family: "Open Sans";
           font-style: normal;
           font-weight: 400;
           font-size: 20px;

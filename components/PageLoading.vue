@@ -9,12 +9,12 @@
 
 <script>
 export default {
-  name: 'PageLoading',
+  name: "PageLoading",
 };
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 .loading span {
   display: inline-block;
   width: 10px;

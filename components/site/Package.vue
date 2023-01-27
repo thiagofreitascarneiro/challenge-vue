@@ -44,12 +44,12 @@
 
 <script>
 export default {
-  name: 'BlogPackage',
+  name: "BlogPackage",
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/css/main';
+@import "../../assets/css/main";
 
 .container {
   height: 490px;
@@ -74,7 +74,7 @@ export default {
         p {
           width: 52px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 17px;
@@ -107,7 +107,7 @@ export default {
       p {
         width: 345px;
         height: 60px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -154,7 +154,7 @@ export default {
         p {
           width: 162px;
           height: 60px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 14px;

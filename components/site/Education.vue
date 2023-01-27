@@ -57,12 +57,12 @@
 
 <script>
 export default {
-  name: 'BlogEducation',
+  name: "BlogEducation",
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/css/main';
+@import "../../assets/css/main";
 
 .container {
   width: 100%;
@@ -111,7 +111,7 @@ export default {
       :nth-child(3) {
         width: 463px;
         height: 40px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -145,7 +145,7 @@ export default {
         :nth-child(2) {
           width: 132px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -159,7 +159,7 @@ export default {
         :nth-child(3) {
           width: 65px;
           height: 16px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 12px;
@@ -194,7 +194,7 @@ export default {
         :nth-child(2) {
           width: 132px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -208,7 +208,7 @@ export default {
         :nth-child(3) {
           width: 95px;
           height: 16px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 12px;
@@ -243,7 +243,7 @@ export default {
         :nth-child(2) {
           width: 170px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -257,7 +257,7 @@ export default {
         :nth-child(3) {
           width: 80px;
           height: 16px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 12px;
@@ -292,7 +292,7 @@ export default {
         :nth-child(2) {
           width: 132px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -306,7 +306,7 @@ export default {
         :nth-child(3) {
           width: 65px;
           height: 16px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 12px;

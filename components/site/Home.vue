@@ -24,13 +24,13 @@
 
 <script>
 export default {
-  name: 'BlogHome',
+  name: "BlogHome",
   props: {},
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/css/main';
+@import "../../assets/css/main";
 
 .container {
   width: 100%;
@@ -61,7 +61,7 @@ export default {
       .goal {
         width: 338px;
         height: 60px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
@@ -127,7 +127,7 @@ export default {
         .goal {
           width: 70%;
           height: 40px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 22px;

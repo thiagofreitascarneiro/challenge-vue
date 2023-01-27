@@ -56,12 +56,12 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: "FooterBar",
 };
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 
 footer {
   margin-top: 0px;

@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'LinkContent',
+  name: "LinkContent",
   props: {
     linkProps: {
       type: Object,
@@ -21,5 +21,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 </style>

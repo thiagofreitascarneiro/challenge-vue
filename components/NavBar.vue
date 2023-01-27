@@ -25,12 +25,12 @@
 
 <script>
 export default {
-  name: 'NavBar',
+  name: "NavBar",
 };
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 
 nav {
   background: $mainColor;

@@ -42,12 +42,12 @@
 
 <script>
 export default {
-  name: 'BlogClient',
+  name: "BlogClient",
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/css/main';
+@import "../../assets/css/main";
 
 .container {
   width: 100%;
@@ -96,7 +96,7 @@ export default {
       :nth-child(3) {
         width: 463px;
         height: 40px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -125,7 +125,7 @@ export default {
         .brief {
           width: 320px;
           height: 60px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -139,7 +139,7 @@ export default {
         .name {
           width: 108px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 16px;
@@ -152,7 +152,7 @@ export default {
         .profession {
           width: 68px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 14px;
@@ -173,7 +173,7 @@ export default {
         .brief {
           width: 320px;
           height: 60px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -187,7 +187,7 @@ export default {
         .name {
           width: 115px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 16px;
@@ -200,7 +200,7 @@ export default {
         .profession {
           width: 115px;
           height: 24px;
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-style: normal;
           font-weight: 700;
           font-size: 14px;

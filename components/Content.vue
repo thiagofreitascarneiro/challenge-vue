@@ -78,7 +78,7 @@
 
 <script>
 export default {
-  name: 'Product',
+  name: "ContentId",
   props: {
     product: {
       type: Object,
@@ -89,8 +89,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+@import "../assets/css/main";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap");
 
 .card {
   width: 800px;
@@ -114,7 +114,7 @@ export default {
   .card-body {
     width: 500px;
     .activity {
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       width: 400px;
       font-style: normal;
       font-weight: 600;
@@ -138,7 +138,7 @@ export default {
 
     .title-card {
       p {
-        font-family: 'DM Serif Display';
+        font-family: $font;
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
@@ -154,7 +154,7 @@ export default {
       }
 
       :nth-child(2) {
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -175,7 +175,7 @@ export default {
         flex-direction: column;
         margin-top: 40px;
         p {
-          font-family: 'Open Sans';
+          font-family: "Open Sans";
           font-style: normal;
           font-weight: 400;
           font-size: 23px;
@@ -217,7 +217,7 @@ export default {
         align-items: center;
         justify-content: center;
         .activity {
-          font-family: 'Open Sans';
+          font-family: "Open Sans";
           width: 350px;
           font-style: normal;
           font-weight: 600;
@@ -243,7 +243,7 @@ export default {
           width: 450px;
           justify-content: center;
           p {
-            font-family: 'DM Serif Display';
+            font-family: $font;
             font-style: normal;
             font-weight: 400;
             font-size: 30px;
@@ -259,7 +259,7 @@ export default {
           }
 
           :nth-child(2) {
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
@@ -281,7 +281,7 @@ export default {
             text-align: center;
             margin-top: 40px;
             p {
-              font-family: 'Open Sans';
+              font-family: "Open Sans";
               font-style: normal;
               font-weight: 400;
               font-size: 23px;
@@ -325,7 +325,7 @@ export default {
         align-items: center;
         justify-content: center;
         .activity {
-          font-family: 'Open Sans';
+          font-family: "Open Sans";
           width: 250px;
           font-style: normal;
           font-weight: 600;
@@ -351,7 +351,7 @@ export default {
           width: 300px;
           justify-content: center;
           p {
-            font-family: 'DM Serif Display';
+            font-family: $font;
             font-style: normal;
             font-weight: 400;
             font-size: 25px;
@@ -367,7 +367,7 @@ export default {
           }
 
           :nth-child(2) {
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
             font-weight: 400;
             font-size: 18px;

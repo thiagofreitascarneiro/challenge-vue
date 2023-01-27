@@ -78,12 +78,12 @@
 
 <script>
 export default {
-  name: 'BlogPrice',
+  name: "BlogPrice",
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/css/main';
+@import "../../assets/css/main";
 
 .container {
   height: 1200px;
@@ -132,7 +132,7 @@ export default {
       :nth-child(3) {
         width: 463px;
         height: 40px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -185,7 +185,7 @@ export default {
           :nth-child(2) {
             width: 148px;
             height: 46px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -256,7 +256,7 @@ export default {
           p {
             width: 200px;
             height: 28px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
@@ -302,7 +302,7 @@ export default {
           :nth-child(2) {
             width: 178px;
             height: 46px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -374,7 +374,7 @@ export default {
           p {
             width: 189px;
             height: 28px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
@@ -419,7 +419,7 @@ export default {
           :nth-child(2) {
             width: 178px;
             height: 46px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -491,7 +491,7 @@ export default {
           p {
             width: 189px;
             height: 28px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 15px;

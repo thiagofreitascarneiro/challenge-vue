@@ -1,12 +1,12 @@
 <template>
-  <div class="slides" v-if="slideProps.type == 'document'">
+  <div class="slides">
     <iframe :src="slideProps.url"></iframe>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SlideContent',
+  name: "SlideContent",
   props: {
     slideProps: {
       type: Object,
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 
 .slides {
   iframe {

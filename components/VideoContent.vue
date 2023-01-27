@@ -1,12 +1,12 @@
 <template>
-  <div class="video" v-if="videoProps.type == 'video'">
+  <div class="video">
     <iframe :src="videoProps.url"></iframe>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'VideoContent',
+  name: "VideoContent",
   props: {
     videoProps: {
       type: Object,
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 
 .video {
   iframe {

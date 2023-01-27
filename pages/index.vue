@@ -10,7 +10,7 @@
       <div v-if="loading">
         <PageLoading />
       </div>
-      <Content
+      <ContentId
         v-for="content in filteredContent"
         :key="content.id"
         :product="content"
@@ -18,29 +18,29 @@
         <nuxt-link :to="`/content/${content.id}`">
           <button class="button-purple">Clique Aqui</button>
         </nuxt-link>
-      </Content>
+      </ContentId>
     </div>
   </div>
 </template>
 
 <script>
-import gql from 'graphql-tag';
-import Content from '@/components/Content';
-import PageLoading from '@/components/PageLoading';
+import gql from "graphql-tag";
+import ContentId from "@/components/Content";
+import PageLoading from "@/components/PageLoading";
 
 export default {
-  name: 'index',
+  name: "indexPage",
 
   components: {
-    Content,
+    ContentId,
     PageLoading,
   },
 
   data() {
     return {
-      search: '',
-      contentCard: '',
-      targetId: '',
+      search: "",
+      contentCard: "",
+      targetId: "",
       contents: null,
       loading: false,
     };
@@ -78,7 +78,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/main';
+@import "../assets/css/main";
 
 .container {
   display: flex;
@@ -91,7 +91,7 @@ export default {
     text-align: center;
     font-size: 35px;
     color: $colorSecondary;
-    font-family: 'DM Serif Display';
+    font-family: $font;
   }
 
   .search-input {
