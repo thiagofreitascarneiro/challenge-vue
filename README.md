@@ -1,18 +1,89 @@
-# challenge-vue
+<h1 align="center">
 
-## Build Setup
+<img src="https://raw.githubusercontent.com/khalleb/ignews/main/public/images/avatar.svg" alt="rocketshoes" width="100px"/>
+
+</h1>
+
+<p align="center">
+  StudyTech - Portal de de estudos 📰🚀
+  <br>
+  <br>
+
+
+  <a href="https://rocketseat.com.br">
+    <img alt="Made by UOL EdTech " src="https://img.shields.io/badge/made%20by-uol edtech-%237516C1">
+  </a>
+
+  <a href="https://www.linkedin.com/in/thiago-freitas-carneiro-39359270/">
+    <img alt="Made by Thiago" src="https://img.shields.io/badge/made%20by-thiagofreitascarneiro-%2319C1">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/github/license/thiagofreitascarneiro/ignews">
+</p>
+
+---
+
+<p align="center">
+  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-começando">Começando</a> &#xa0; &#xa0; | &#xa0;
+  <a href="#framed_picture-imagens">Imagens</a> &#xa0; &#xa0;
+</p>
+
+<br>
+
+![](next.png)
+
+## :dart: Sobre ##
+
+
+O projeto ig.news é um blog onde os usuários podem ter acesso ao conteúdo de cada postagem de acordo com o status de sua assinatura.<br>
+O blog possui um sistema de compra integrado com o STRIPE, e após o usuário realizar o pagamento, sua inscrição estará ativa e pronta para visualizar o conteúdo completo
+de todo o blog. Caso o usuário não deseje optar pela assinatura, ele terá acesso limitado ao conteúdo das postagens. E todos os dados necessários para se fazer verificações
+de assinaturas ou dados dos usuários, estão salvos no banco de dados FaunaDB.
+<br>
+<br>
+Essa é uma aplicação Serverless, ou seja, todo o processo que dependeria de um backend foi integrado dentro do front e seguindo o padrão da JAMStack.
+<br>
+As postagens são feitas pelo painel do Prismic CMS e integradas diretamente pelo front.
+
+
+## 🧪 Tecnologias ##
+
+As seguintes tecnologias foram utilizadas no projeto:
+
+- [Next.js](https://nextjs.org/)
+- [Prismic CMS](https://prismic.io/)
+- [Stripe](https://stripe.com/)
+- [FaunaDB](https://fauna.com/)
+
+## :white_check_mark: Requerimentos ##
+
+- [Node](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/lang/en/)
+
+## :checkered_flag: Começando ##
 
 ```bash
-# install dependencies
+# Clone this project
+$ git clone https://github.com/thiagofreitascarneiro/ignews
+# Access
+$ cd ignews
+# Install dependencies
 $ yarn install
-
-# serve with hot reload at localhost:3000
+# Run the project
 $ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# The server will initialize in the <http://localhost:3000>
 ```
+## :framed_picture: Imagens ##
+
+<h1 align="center">
+    <img alt = "Web app" src = "./.github/image-01.png" width = "500px" />
+    <img alt = "Web app" src = "./.github/image-04.png" width = "500px" />
+    <img alt = "Web app" src = "./.github/image-03.png" width = "500px" />
+    <img alt = "Web app" src = "./.github/image-05.png" width = "500px" />
+</h1>
+</h1>
+</h1>
+

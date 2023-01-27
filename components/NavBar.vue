@@ -1,49 +1,43 @@
 <template>
   <div>
     <nav>
-      <input type="checkbox" id="check">
+      <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
-        <font-awesome-icon style="margin-top: 20px; margin-right: 20px; color:#5434af" icon="fa-solid fa-bars" />
+        <font-awesome-icon
+          style="margin-top: 20px; margin-right: 20px; color: #5434af"
+          icon="fa-solid fa-bars"
+        />
       </label>
       <label class="logo">
-        <img src="../assets/images/logo.png">
+        <img src="../assets/images/logo.png" />
       </label>
       <ul>
         <li>
-          <nuxt-link class="active" to="/">
-            Início
-          </nuxt-link>
+          <nuxt-link class="active" to="/"> Início </nuxt-link>
         </li>
         <li>
-          <nuxt-link class="active" to="/site">
-            Site
-          </nuxt-link>
+          <nuxt-link class="active" to="/site"> Site </nuxt-link>
         </li>
       </ul>
-	  </nav>
+    </nav>
   </div>
 </template>
 
 <script>
-
-
-
-
 export default {
-  name:'NavBar'
-}
+  name: 'NavBar',
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/css/main";
+@import '../assets/css/main';
 
 nav {
   background: $mainColor;
   height: 80px;
   width: 100%;
-  box-shadow: 0 2px 12px -2px rgba(0,0,0,.9);
+  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.9);
   /* margin-bottom: 5px; */
-
 
   ul {
     float: right;
@@ -62,13 +56,13 @@ nav {
         border-radius: 3px;
         text-transform: uppercase;
         text-decoration: none;
-        &:active{
+        &:active {
           background: $colorSecondary;
-          transition: .5s;
+          transition: 0.5s;
         }
         &:hover {
           background: $colorSecondary;
-          transition: .5s;
+          transition: 0.5s;
           color: $white;
         }
       }
@@ -80,8 +74,6 @@ nav {
   padding: 30px;
   line-height: 110px;
   img {
-
-
   }
 }
 
@@ -92,7 +84,6 @@ nav {
   line-height: 40px;
   cursor: pointer;
   display: none;
-
 }
 
 #check {
@@ -102,7 +93,7 @@ nav {
   }
 }
 
-@media(max-width: 952px) {
+@media (max-width: 952px) {
   .logo {
     font-size: 30px;
     padding-left: 50px;
@@ -117,14 +108,14 @@ nav {
     display: block;
   }
   ul {
-    position:fixed;
+    position: fixed;
     width: 100%;
     height: 30vh;
     background: $colorSecondary;
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
     z-index: 1;
   }
 
@@ -140,28 +131,26 @@ nav {
   a {
     font-size: 20px;
     color: #ffffff !important;
-    &:active{
-          background: none;
-          color: #ffffff;
-        }
-        &:hover {
-          background: none;
-          color: #ffffff;
-        }
+    &:active {
+      background: none;
+      color: #ffffff;
     }
-
-    #check:checked ~ ul {
-      left: 0;
+    &:hover {
+      background: none;
+      color: #ffffff;
     }
+  }
 
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
 
 @media (max-width: 350px) {
   .logo {
-    img  {
+    img {
       width: 20vh;
     }
-
   }
 }
 </style>

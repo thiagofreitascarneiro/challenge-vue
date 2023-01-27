@@ -1,35 +1,31 @@
 <template>
   <div class="container">
-    <NavBar/>
-    <Nuxt/>
-    <FooterBar/>
+    <NavBar />
+    <Nuxt />
+    <FooterBar />
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue'
-import FooterBar from '@/components/FooterBar.vue'
+import NavBar from '@/components/NavBar.vue';
+import FooterBar from '@/components/FooterBar.vue';
 
 export default {
   name: 'layout',
   components: {
     NavBar,
-    FooterBar
+    FooterBar,
   },
 
   data() {
-    return {
-
-    }
-  }
-}
+    return {};
+  },
+};
 </script>
 
 <style lang="scss">
-
 .container {
   margin: 0 auto;
-  background: #EFF0F3;
+  background: #eff0f3;
 }
-
 </style>

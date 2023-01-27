@@ -1,23 +1,23 @@
 <template>
-  <div class='image'>
-    <img :src="imgProps.url">
+  <div class="image">
+    <img :src="imgProps.url" />
   </div>
 </template>
 
 <script>
 export default {
-name: 'ImageContent',
- props: {
-  imgProps: {
-    type: Object,
-    required: true
-  }
-}
-}
+  name: 'ImageContent',
+  props: {
+    imgProps: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/css/main";
+@import '../assets/css/main';
 
 .image {
   display: flex;
@@ -28,7 +28,7 @@ name: 'ImageContent',
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .image {
     display: flex;
     margin: 0 auto;
@@ -41,20 +41,19 @@ name: 'ImageContent',
   }
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   .image {
-      img {
+    img {
       width: 49vh;
     }
   }
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   .image {
-      img {
+    img {
       width: 35vh;
     }
   }
 }
-
 </style>

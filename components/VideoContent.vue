@@ -2,7 +2,6 @@
   <div class="video" v-if="videoProps.type == 'video'">
     <iframe :src="videoProps.url"></iframe>
   </div>
-
 </template>
 
 <script>
@@ -11,24 +10,24 @@ export default {
   props: {
     videoProps: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/css/main";
+@import '../assets/css/main';
 
 .video {
   iframe {
     margin: 20px auto;
     width: 620px;
-    height:415px;
+    height: 415px;
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .video {
     iframe {
       width: 450px;
@@ -36,7 +35,7 @@ export default {
   }
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   .video {
     iframe {
       width: 350px;
@@ -44,7 +43,7 @@ export default {
   }
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   .video {
     iframe {
       width: 270px;
@@ -52,5 +51,4 @@ export default {
     }
   }
 }
-
 </style>

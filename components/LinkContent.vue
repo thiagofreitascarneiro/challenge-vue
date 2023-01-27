@@ -1,8 +1,8 @@
 <template>
-  <div class='container'>
+  <div class="container">
     <div>
-      <a :href='linkProps.url' target="_blank">
-        <button class='button'>visualizar o conteúdo</button>
+      <a :href="linkProps.url" target="_blank">
+        <button class="button">visualizar o conteúdo</button>
       </a>
     </div>
   </div>
@@ -14,13 +14,12 @@ export default {
   props: {
     linkProps: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/css/main";
-
+@import '../assets/css/main';
 </style>

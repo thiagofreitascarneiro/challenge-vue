@@ -27,20 +27,21 @@
       </div>
       <div class="boxs">
         <h2>Sobre nós</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Ea deleniti autem unde inventore facilis officiis optio rerum
-          tempora consequatur nulla distinctio odit, laborum
-          laudantium repudiandae quidem fugiat eaque eveniet? Eum!
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti
+          autem unde inventore facilis officiis optio rerum tempora consequatur
+          nulla distinctio odit, laborum laudantium repudiandae quidem fugiat
+          eaque eveniet? Eum!
         </p>
       </div>
     </footer>
     <div class="footer">
-       <label class="logo">
-        <img src="../assets/images/logo.png">
+      <label class="logo">
+        <img src="../assets/images/logo.png" />
       </label>
       <div class="social-midia">
         <div class="social">
-          <font-awesome-icon icon="fa-brands fa-whatsapp" class="fa-2x"/>
+          <font-awesome-icon icon="fa-brands fa-whatsapp" class="fa-2x" />
         </div>
         <div class="social">
           <font-awesome-icon icon="fa-brands fa-instagram" class="fa-2x" />
@@ -51,17 +52,16 @@
       </div>
     </div>
   </section>
-
 </template>
 
 <script>
 export default {
-  name:'Footer'
-}
+  name: 'Footer',
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/css/main";
+@import '../assets/css/main';
 
 footer {
   margin-top: 0px;
@@ -111,13 +111,10 @@ footer {
   justify-content: space-between;
   background: $mainColor;
 
-
   .logo {
     padding: 10px;
     line-height: 10px;
     img {
-
-
     }
   }
 
@@ -138,31 +135,31 @@ footer {
       color: $colorSecondary;
       border-radius: 5px;
       cursor: pointer;
-      transition: background .3s linear;
+      transition: background 0.3s linear;
 
       a {
         color: #000;
         font-size: 1.5em;
-        transition: color .3s linear;
+        transition: color 0.3s linear;
       }
-    .social:hover {
-      background: #444;
-      a {
-        color: #fff;
+      .social:hover {
+        background: #444;
+        a {
+          color: #fff;
+        }
       }
-    }
     }
   }
 }
 
-@media(max-width: 950px) {
+@media (max-width: 950px) {
   footer {
     flex-direction: column;
     justify-content: center;
     .logo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
+      font-size: 30px;
+      padding-left: 50px;
+    }
     .boxs {
       text-align: center;
       width: 100%;
@@ -176,21 +173,17 @@ footer {
   }
 }
 
-@media(max-width: 415px) {
+@media (max-width: 415px) {
   footer {
-
     .logo {
-    font-size: 10px;
-    img {
-      width: 20vh;
+      font-size: 10px;
+      img {
+        width: 20vh;
+      }
     }
-
-  }
     .boxs {
-
     }
     .boxs:nth-child(4) {
-
     }
   }
 
@@ -204,5 +197,4 @@ footer {
     }
   }
 }
-
 </style>
