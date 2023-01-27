@@ -1,6 +1,10 @@
 <h1 align="center">
 
-<img src="https://raw.githubusercontent.com/khalleb/ignews/main/public/images/avatar.svg" alt="rocketshoes" width="100px"/>
+<img src="./assets/images/logo.png" alt="studyTech" width="300px"/>
+
+
+<br/>
+<img src="./assets/images/nuxt-start.png" alt="studyTech" width="300px"/>
 
 </h1>
 
@@ -38,38 +42,39 @@
 ## :dart: Sobre ##
 
 
-O projeto ig.news é um blog onde os usuários podem ter acesso ao conteúdo de cada postagem de acordo com o status de sua assinatura.<br>
-O blog possui um sistema de compra integrado com o STRIPE, e após o usuário realizar o pagamento, sua inscrição estará ativa e pronta para visualizar o conteúdo completo
-de todo o blog. Caso o usuário não deseje optar pela assinatura, ele terá acesso limitado ao conteúdo das postagens. E todos os dados necessários para se fazer verificações
-de assinaturas ou dados dos usuários, estão salvos no banco de dados FaunaDB.
+O Projeto estudytTech é uma plataforma de cursos de tecnologia. Os conteúdos são visualizados na tela principal de forma interativa, indicando as referências de cada conteúdo, se o mesmo se trata de uma mídia ou imagem, se aquele conteúdo possui um link ou documento. Impactando a primeira vista o que aquele determinado conteúdo oferece.
 <br>
+
 <br>
-Essa é uma aplicação Serverless, ou seja, todo o processo que dependeria de um backend foi integrado dentro do front e seguindo o padrão da JAMStack.
+
 <br>
-As postagens são feitas pelo painel do Prismic CMS e integradas diretamente pelo front.
 
 
 ## 🧪 Tecnologias ##
 
 As seguintes tecnologias foram utilizadas no projeto:
 
-- [Next.js](https://nextjs.org/)
-- [Prismic CMS](https://prismic.io/)
-- [Stripe](https://stripe.com/)
-- [FaunaDB](https://fauna.com/)
+- [Nuxt.js](https://nuxtjs.org/)
+- [GraphQL](https://graphql.org/)
+- [SASS](https://sass-lang.com/)
+- [JEST](https://jestjs.io/pt-BR/)
+
 
 ## :white_check_mark: Requerimentos ##
 
 - [Node](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/lang/en/)
+- [Vue CLI](https://cli.vuejs.org/)
+
+
 
 ## :checkered_flag: Começando ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/thiagofreitascarneiro/ignews
+$ git clone https://github.com/thiagofreitascarneiro/challenge-vue
 # Access
-$ cd ignews
+$ cd challenge-vue
 # Install dependencies
 $ yarn install
 # Run the project
@@ -78,12 +83,5 @@ $ yarn dev
 ```
 ## :framed_picture: Imagens ##
 
-<h1 align="center">
-    <img alt = "Web app" src = "./.github/image-01.png" width = "500px" />
-    <img alt = "Web app" src = "./.github/image-04.png" width = "500px" />
-    <img alt = "Web app" src = "./.github/image-03.png" width = "500px" />
-    <img alt = "Web app" src = "./.github/image-05.png" width = "500px" />
-</h1>
-</h1>
-</h1>
+<img src="./assets/images/nuxt.png" alt="studyTech" width="500px"/>
 
