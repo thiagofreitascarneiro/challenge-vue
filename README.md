@@ -19,7 +19,7 @@
   </a>
 
   <a href="https://www.linkedin.com/in/thiago-freitas-carneiro-39359270/">
-    <img alt="Made by Thiago" src="https://img.shields.io/badge/made%20by-thiagofreitascarneiro-%2319C1">
+    <img alt="Made by Thiago" src="https://img.shields.io/badge/made%20by-thiagofreitascarneiro-%237516C1">
   </a>
 
   <img alt="License" src="https://img.shields.io/github/license/thiagofreitascarneiro/ignews">
