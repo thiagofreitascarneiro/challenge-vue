@@ -72,7 +72,6 @@ export default {
             title
             description
             allow_download
-            embeddable
             url
             type
           }
@@ -84,6 +83,7 @@ export default {
     });
     this.content = data.getContent;
     this.loading = false;
+    console.log(this.content);
   },
 };
 </script>
