@@ -9,7 +9,7 @@
           você aprender com situaçoes reais.
         </p>
       </div>
-      <div class="teacher">
+      <div class="teacher" data-aos="flip-up" data-aos-delay="500">
         <div class="teacher-1">
           <picture>
             <img src="../../assets/images/teacher-1.png" />

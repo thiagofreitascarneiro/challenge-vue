@@ -37,12 +37,11 @@
 
 <br>
 
-![](next.png)
 
 ## :dart: Sobre ##
 
 
-O Projeto estudytTech é uma plataforma de cursos de tecnologia. Os conteúdos são visualizados na tela principal de forma interativa, indicando as referências de cada conteúdo, se o mesmo se trata de uma mídia ou imagem, se aquele conteúdo possui um link ou documento. Impactando a primeira vista o que aquele determinado conteúdo oferece.
+O Projeto estudytTech é uma plataforma de cursos de tecnologia. Os conteúdos são visualizados na tela principal de forma interativa, indicando as referências de cada conteúdo, se o mesmo se trata de uma mídia, vídeo, imagem... Impactando a primeira vista o que aquele determinado conteúdo oferece.
 <br>
 
 <br>

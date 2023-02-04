@@ -9,7 +9,7 @@
           conteúdo para você se capacitar todos os dias.
         </p>
       </div>
-      <div class="package">
+      <div class="package" data-aos="flip-up" data-aos-delay="800">
         <div class="free">
           <div class="header">
             <h2>FREE</h2>

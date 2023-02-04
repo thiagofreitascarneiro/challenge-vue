@@ -1,10 +1,22 @@
 <template>
   <div class="container-site">
     <Home />
-    <Package />
-    <Live />
-    <Price />
-    <Client />
+    <div data-aos="fade-up" data-aos-delay="500">
+      <Package />
+    </div>
+
+    <div data-aos="fade-down" data-aos-delay="500">
+      <Live />
+    </div>
+
+    <div data-aos="fade-up-right" data-aos-delay="500">
+      <Price />
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <Client />
+    </div>
+
     <Education />
   </div>
 </template>

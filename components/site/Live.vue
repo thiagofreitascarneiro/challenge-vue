@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <div class="video">
-      <picture>
+      <picture data-aos="fade-right">
         <img src="../../assets/images/woman.png" />
       </picture>
-      <div class="content-video">
+      <div class="content-video" data-aos="fade-left">
         <div class="line-red"></div>
         <h1>Video in Live <br />ao Vivo</h1>
         <p>
