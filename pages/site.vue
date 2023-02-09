@@ -1,15 +1,15 @@
 <template>
   <div class="container-site">
     <Home />
-    <div data-aos="fade-up" data-aos-delay="500">
+    <div data-aos="fade-up" data-aos-delay="600">
       <Package />
     </div>
 
-    <div data-aos="fade-down" data-aos-delay="500">
+    <div data-aos="fade-down" data-aos-delay="600">
       <Live />
     </div>
 
-    <div data-aos="fade-up-right" data-aos-delay="500">
+    <div data-aos="fade-up-right" data-aos-delay="600">
       <Price />
     </div>
 

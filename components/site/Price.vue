@@ -9,8 +9,8 @@
           conteúdo para você se capacitar todos os dias.
         </p>
       </div>
-      <div class="package" data-aos="flip-up" data-aos-delay="800">
-        <div class="free">
+      <div class="package">
+        <div class="free" data-aos="flip-up" data-aos-delay="500">
           <div class="header">
             <h2>FREE</h2>
             <p>Acesso a 100 videos introdutórios da paltaforma</p>
@@ -27,7 +27,7 @@
           </div>
           <button class="button">Assine Agora</button>
         </div>
-        <div class="standard">
+        <div class="standard" data-aos="flip-up" data-aos-delay="700">
           <div class="header">
             <h2>STANDARD</h2>
             <p>
@@ -50,7 +50,7 @@
             Assine Agora
           </button>
         </div>
-        <div class="business">
+        <div class="business" data-aos="flip-up" data-aos-delay="900">
           <div class="header">
             <h2>BUSINESS</h2>
             <p>
