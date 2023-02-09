@@ -9,8 +9,8 @@
           você aprender com situaçoes reais.
         </p>
       </div>
-      <div class="teacher" data-aos="flip-up" data-aos-delay="700">
-        <div class="teacher-1">
+      <div class="teacher">
+        <div class="teacher-1" data-aos="flip-up" data-aos-delay="600">
           <picture>
             <img src="../../assets/images/teacher-1.png" />
           </picture>
@@ -20,7 +20,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-2">
+        <div class="teacher-2" data-aos="flip-up" data-aos-delay="700">
           <picture>
             <img src="../../assets/images/teacher-2.png" />
           </picture>
@@ -30,7 +30,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-3">
+        <div class="teacher-3" data-aos="flip-up" data-aos-delay="800">
           <picture>
             <img src="../../assets/images/teacher-3.png" />
           </picture>
@@ -40,7 +40,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-4">
+        <div class="teacher-4" data-aos="flip-up" data-aos-delay="900">
           <picture>
             <img src="../../assets/images/teacher-4.png" />
           </picture>
