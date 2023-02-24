@@ -16,10 +16,6 @@ export default {
     NavBar,
     FooterBar,
   },
-
-  data() {
-    return {};
-  },
 };
 </script>
 
