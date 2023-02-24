@@ -72,8 +72,6 @@ nav {
 .logo {
   padding: 30px;
   line-height: 110px;
-  img {
-  }
 }
 
 .checkbtn {
