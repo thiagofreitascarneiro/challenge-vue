@@ -10,7 +10,7 @@
       <div v-if="loading">
         <PageLoading />
       </div>
-      <ContentId
+      <Content
         v-for="content in filteredContent"
         :key="content.id"
         :product="content"
@@ -18,21 +18,22 @@
         <nuxt-link :to="`/content/${content.id}`">
           <button class="button-purple">Clique Aqui</button>
         </nuxt-link>
-      </ContentId>
+      </Content>
     </div>
   </div>
 </template>
 
 <script>
 import gql from "graphql-tag";
-import ContentId from "@/components/Content";
+import Content from "@/components/Content";
 import PageLoading from "@/components/PageLoading";
 
 export default {
   name: "indexPage",
 
   components: {
-    ContentId,
+    // eslint-disable-next-line vue/no-reserved-component-names
+    Content,
     PageLoading,
   },
 
