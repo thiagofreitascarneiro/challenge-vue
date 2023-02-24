@@ -114,8 +114,6 @@ footer {
   .logo {
     padding: 10px;
     line-height: 10px;
-    img {
-    }
   }
 
   h2 {
@@ -180,10 +178,6 @@ footer {
       img {
         width: 20vh;
       }
-    }
-    .boxs {
-    }
-    .boxs:nth-child(4) {
     }
   }
 
