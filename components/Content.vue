@@ -316,7 +316,6 @@ export default {
         img {
           width: 170px;
           margin: 10px auto;
-          /* margin: 20px 30px 50px 40px; */
         }
       }
       .card-body {
