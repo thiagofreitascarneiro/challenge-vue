@@ -20,7 +20,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-2" data-aos="flip-up" data-aos-delay="700">
+        <div class="teacher-2" data-aos="flip-up" data-aos-delay="900">
           <picture>
             <img src="../../assets/images/teacher-2.png" />
           </picture>
@@ -30,7 +30,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-3" data-aos="flip-up" data-aos-delay="800">
+        <div class="teacher-3" data-aos="flip-up" data-aos-delay="1200">
           <picture>
             <img src="../../assets/images/teacher-3.png" />
           </picture>
@@ -40,7 +40,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-4" data-aos="flip-up" data-aos-delay="900">
+        <div class="teacher-4" data-aos="flip-up" data-aos-delay="1500">
           <picture>
             <img src="../../assets/images/teacher-4.png" />
           </picture>
@@ -361,29 +361,11 @@ export default {
             img {
             }
           }
-          :nth-child(2) {
-          }
-
-          :nth-child(3) {
-          }
-          :nth-child(4) {
-            img {
-            }
-          }
         }
         .teacher-2 {
           margin: 30px auto;
 
           picture {
-            img {
-            }
-          }
-          :nth-child(2) {
-          }
-
-          :nth-child(3) {
-          }
-          :nth-child(4) {
             img {
             }
           }
@@ -395,31 +377,9 @@ export default {
             img {
             }
           }
-          :nth-child(2) {
-          }
-
-          :nth-child(3) {
-          }
-          :nth-child(4) {
-            img {
-            }
-          }
         }
         .teacher-4 {
           margin: 30px auto;
-          picture {
-            img {
-            }
-          }
-          :nth-child(2) {
-          }
-
-          :nth-child(3) {
-          }
-          :nth-child(4) {
-            img {
-            }
-          }
         }
       }
     }
@@ -434,10 +394,6 @@ export default {
         height: 134px;
         margin: 40px auto;
         width: 291px;
-
-        :nth-child(1) {
-        }
-
         h1 {
           width: 291px;
           font-size: 30px;

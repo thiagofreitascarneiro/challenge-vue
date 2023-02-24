@@ -69,9 +69,8 @@ export default {
 
   computed: {
     filteredContent() {
-      return this.contents?.filter((content) => {
-        return content.title.match(this.search);
-      });
+      const regex = new RegExp(this.search, "i");
+      return this.contents?.filter((content) => content.title.match(regex));
     },
   },
 };
