@@ -30,7 +30,7 @@ import Client from "@/components/site/Client.vue";
 import Education from "@/components/site/Education.vue";
 
 export default {
-  name: "web-site",
+  name: "webSite",
   components: {
     Home,
     Package,

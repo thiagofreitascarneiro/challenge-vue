@@ -50,10 +50,10 @@ export default {
   name: "contentCard",
   components: {
     PageLoading,
-    LinkContent: () => import("@/components/LinkContent"),
-    ImageContent: () => import("@/components/ImageContent"),
-    VideoContent: () => import("@/components/VideoContent"),
-    SlideContent: () => import("@/components/SlideContent"),
+    LinkContent: () => import("@/components/Content/Link"),
+    ImageContent: () => import("@/components/Content/Image"),
+    VideoContent: () => import("@/components/Content/Video"),
+    SlideContent: () => import("@/components/Content/Slide"),
   },
   data() {
     return {
@@ -83,7 +83,6 @@ export default {
     });
     this.content = data.getContent;
     this.loading = false;
-    console.log(this.content);
   },
 };
 </script>
