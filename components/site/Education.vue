@@ -269,8 +269,6 @@ export default {
         }
         :nth-child(4) {
           margin-top: 10px;
-          img {
-          }
         }
       }
       .teacher-4 {
@@ -340,14 +338,6 @@ export default {
         height: 134px;
         margin: 40px auto;
         width: 391px;
-
-        :nth-child(1) {
-        }
-
-        h1 {
-        }
-        :nth-child(3) {
-        }
       }
       .teacher {
         flex-direction: column;

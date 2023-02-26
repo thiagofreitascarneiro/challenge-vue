@@ -63,9 +63,9 @@ As seguintes tecnologias foram utilizadas no projeto:
 
 ## :white_check_mark: Requerimentos ##
 
-- [Node](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/lang/en/)
-- [Vue CLI](https://cli.vuejs.org/)
+- [Node](https://nodejs.org/en/) - (version 16.13.1)
+- [Yarn](https://yarnpkg.com/lang/en/) - (version 1.22.17)
+- [Vue CLI](https://cli.vuejs.org/) - (version 5.0.8)
 
 
 
