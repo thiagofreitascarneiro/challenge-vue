@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-  StudyTech - Portal de de estudos 📰🚀
+  StudyTech - Portal de estudos 📰🚀
   <br>
   <br>
 
