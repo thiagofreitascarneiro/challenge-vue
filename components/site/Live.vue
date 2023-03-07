@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <div class="video">
-      <picture data-aos="fade-right">
+      <picture>
         <img src="../../assets/images/woman.png" />
       </picture>
-      <div class="content-video" data-aos="fade-left">
+      <div class="content-video">
         <div class="line-red"></div>
         <h1>Video in Live <br />ao Vivo</h1>
         <p>
@@ -121,20 +121,9 @@ export default {
       }
       .content-video {
         margin: 0 auto;
-        .line-red {
-        }
 
         .certified-content {
           position: relative;
-          p {
-          }
-          img {
-          }
-        }
-        h1 {
-        }
-
-        p {
         }
       }
     }
@@ -160,8 +149,6 @@ export default {
         margin: 0 auto;
         align-items: none;
         width: 281px;
-        .line-red {
-        }
 
         h1 {
           line-height: 35px;

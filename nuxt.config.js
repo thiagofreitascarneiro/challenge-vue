@@ -40,19 +40,6 @@ export default {
 
   modules: ["@nuxtjs/apollo", "@nuxtjs/eslint-module"],
 
-  plugins: [{ src: "@/plugins/aos", mode: "client" }],
-
-  purgeCSS: {
-    whitelist: [
-      "aos-init",
-      "aos-animate",
-      "data-aos-delay",
-      "data-aos-duration",
-      "fade-up",
-      "zoom-in",
-    ],
-  },
-
   apollo: {
     clientConfigs: {
       default: {

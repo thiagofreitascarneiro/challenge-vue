@@ -6,12 +6,7 @@
         <h1>Assistiram Nossos Cursos</h1>
         <p>Conheça os depoimentos e historias de quem estuda com a gente.</p>
       </div>
-      <div
-        class="testimony"
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
-        data-aos-delay="600"
-      >
+      <div class="testimony">
         <div class="first-testimony">
           <picture>
             <img src="../../assets/images/testimonial-1.png" />

@@ -1,19 +1,19 @@
 <template>
   <div class="container-site">
     <Home />
-    <div data-aos="fade-up" data-aos-delay="600">
+    <div>
       <Package />
     </div>
 
-    <div data-aos="fade-down" data-aos-delay="600">
+    <div>
       <Live />
     </div>
 
-    <div data-aos="fade-up-right" data-aos-delay="600">
+    <div>
       <Price />
     </div>
 
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div>
       <Client />
     </div>
 

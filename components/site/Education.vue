@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="teacher">
-        <div class="teacher-1" data-aos="flip-up" data-aos-delay="600">
+        <div class="teacher-1">
           <picture>
             <img src="../../assets/images/teacher-1.png" />
           </picture>
@@ -20,7 +20,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-2" data-aos="flip-up" data-aos-delay="900">
+        <div class="teacher-2">
           <picture>
             <img src="../../assets/images/teacher-2.png" />
           </picture>
@@ -30,7 +30,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-3" data-aos="flip-up" data-aos-delay="1200">
+        <div class="teacher-3">
           <picture>
             <img src="../../assets/images/teacher-3.png" />
           </picture>
@@ -40,7 +40,7 @@
             <img src="../../assets/images/social-media.png" />
           </picture>
         </div>
-        <div class="teacher-4" data-aos="flip-up" data-aos-delay="1500">
+        <div class="teacher-4">
           <picture>
             <img src="../../assets/images/teacher-4.png" />
           </picture>

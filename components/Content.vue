@@ -146,10 +146,10 @@ export default {
         color: #081f32;
         margin-left: 35px;
         margin-top: 15px;
-        overflow: hidden; // Removendo barra de rolagem
-        text-overflow: ellipsis; // Adicionando "..." ao final
+        overflow: hidden;
+        text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3; // Quantidade de linhas
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
       }
 
@@ -387,8 +387,6 @@ export default {
             align-items: center;
             text-align: center;
             margin-top: 0px;
-            p {
-            }
           }
         }
       }
@@ -418,26 +416,6 @@ export default {
       }
       .card-body {
         width: 300px;
-
-        .activity {
-          :nth-child(2n) {
-          }
-        }
-
-        .title-card {
-          p {
-          }
-
-          :nth-child(2) {
-          }
-        }
-
-        .footer-card {
-          .download {
-            p {
-            }
-          }
-        }
       }
     }
   }
@@ -479,9 +457,6 @@ export default {
             margin-top: 4px;
             font-size: 20px;
             line-height: 23px;
-          }
-
-          :nth-child(2) {
           }
         }
 

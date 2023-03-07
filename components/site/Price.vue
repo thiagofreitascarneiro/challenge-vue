@@ -10,7 +10,7 @@
         </p>
       </div>
       <div class="package">
-        <div class="free" data-aos="flip-up" data-aos-delay="500">
+        <div class="free">
           <div class="header">
             <h2>FREE</h2>
             <p>Acesso a 100 videos introdutórios da paltaforma</p>
@@ -27,7 +27,7 @@
           </div>
           <button class="button">Assine Agora</button>
         </div>
-        <div class="standard" data-aos="flip-up" data-aos-delay="700">
+        <div class="standard">
           <div class="header">
             <h2>STANDARD</h2>
             <p>
@@ -50,7 +50,7 @@
             Assine Agora
           </button>
         </div>
-        <div class="business" data-aos="flip-up" data-aos-delay="900">
+        <div class="business">
           <div class="header">
             <h2>BUSINESS</h2>
             <p>
@@ -516,12 +516,6 @@ export default {
         height: 134px;
         margin: 40px auto;
 
-        :nth-child(1) {
-        }
-
-        h1 {
-        }
-
         :nth-child(3) {
           width: 272px;
           height: 80px;
@@ -560,9 +554,6 @@ export default {
     .pricing {
       .pratice-advice {
         width: 280px;
-
-        :nth-child(1) {
-        }
 
         h1 {
           width: 280px;
